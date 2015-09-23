@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/ucreate-pcb-co/Uploads/logo.png">
+    <link rel="icon" href="/taobaoke/Uploads/logo.png">
 
-    <title>1977画室网站后台</title>
+    <title>淘宝客后台</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/ucreate-pcb-co/Public/Admin/Css/bootstrap.min.css" rel="stylesheet">
+    <link href="/taobaoke/Public/Admin/Css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/ucreate-pcb-co/Public/Admin/Css/dashboard.css" rel="stylesheet">
+    <link href="/taobaoke/Public/Admin/Css/dashboard.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -22,11 +22,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/ucreate-pcb-co/Public/Admin/Js/jquery.min.js"></script>
-    <script src="/ucreate-pcb-co/Public/Admin/Js/bootstrap.min.js"></script>
-    <script src="/ucreate-pcb-co/Public/Admin/Js/docs.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/jquery.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/bootstrap.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/ucreate-pcb-co/Public/Admin/Js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/ie10-viewport-bug-workaround.js"></script>
 
     <script type="text/javascript" language="javascript">
     $(document).ready(function() 
@@ -104,11 +104,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo U('Homepage/index');?>" style="color:#FFF">1977画室网站后台</a>
+          <a class="navbar-brand" href="<?php echo U('Homepage/index');?>" style="color:#FFF">淘宝客后台</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" style="color:#FFF">用户名：Superadmin</a></li>
+            <li><a href="<?php echo U('Index/changePassword');?>" style="color:#FFF">用户名：Superadmin</a></li>
             <li><a href="<?php echo U('Index/help');?>">技术支持</a></li>
             <li><a href="<?php echo U('Login/loginout');?>" target="_self">退出登陆</a></li>
           </ul>
@@ -125,20 +125,13 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="<?php echo U('Webinfo/index');?>" style="font-size:14px;">网站基础信息</a></li>
           </ul>
-          <ul class="nav nav-sidebar">
+<!--           <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Homepage/index');?>" style="font-size:14px;">首页模块</a></li>
             <li ><a href="<?php echo U('Aboutus/index');?>" style="font-size:14px;">关于1977模块</a></li>
             <li><a href="<?php echo U('Strength/index');?>" style="font-size:14px;">实力展示模块</a></li>
             <li><a href="<?php echo U('Admission/index');?>" style="font-size:14px;">招生详情模块</a></li>
             <li><a href="<?php echo U('Consultus/index');?>" style="font-size:14px;">资讯1977模块</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="<?php echo U('Contact/index');?>" style="font-size:14px;">联系信息</a></li>
-            <li ><a href="<?php echo U('Works/index');?>" style="font-size:14px;">作品展示</a></li>
-            <li ><a href="<?php echo U('Question/index');?>" style="font-size:14px;">招生问答</a></li>
-            <li ><a href="<?php echo U('Friend/index');?>" style="font-size:14px;">友情链接</a></li>
-            <li ><a href="<?php echo U('Application/index');?>" style="font-size:14px;">在线报名名单<div id="callApplicationCount" style="float:right;"></div></a></li>
-          </ul>
+          </ul> -->
           <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Visitor/index');?>" style="font-size:14px;">访问者信息</a></li>
             <li ><a href="<?php echo U('Index/changePassword');?>" style="font-size:14px;">修改登录密码</a></li>
@@ -150,63 +143,6 @@
         </div>
       </div>
     </div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="/ucreate-pcb-co/Public/Uploads/img/songyaodong.jpg" class="img-rounded" style="width:570px;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal_2 -->
-<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">      
-中央美术学院1人；北京服装学院1人；天津美术学院1人；西安美术学院3人；西川美术学院18人；西安交通大学1人；重庆大学10人；西南大学13人；
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal_3 -->
-<div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="/ucreate-pcb-co/Public/Uploads/img/scrollleft/1.jpg" class="img-rounded" style="width:570px;">
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal_4 -->
-<div class="modal fade" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">      
-1、火车站可乘131路，在十里店站、幸福巷站换乘121、72路公交至高新区路下车即到<br>
-2、市内西关十字乘103路至高新区路口下车即到<br>
-3、雁滩美伦百货乘20路至高新区路口下车即到<br>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal_5 -->
-<div class="modal fade" id="myModal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="/ucreate-pcb-co/Public/Uploads/img/pic/1.jpeg" class="img-rounded" style="width:570px;">
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Modal_Image -->
 <div class="modal fade" id="myModalImage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
