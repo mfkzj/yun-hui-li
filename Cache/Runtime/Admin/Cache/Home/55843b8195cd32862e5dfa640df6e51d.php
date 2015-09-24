@@ -28,6 +28,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/taobaoke/Public/Admin/Js/ie10-viewport-bug-workaround.js"></script>
 
+    
     <script type="text/javascript" language="javascript">
     $(document).ready(function() 
     {  
@@ -125,13 +126,14 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="<?php echo U('Webinfo/index');?>" style="font-size:14px;">网站基础信息</a></li>
           </ul>
-<!--           <ul class="nav nav-sidebar">
+           <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Homepage/index');?>" style="font-size:14px;">首页模块</a></li>
+            <!--
             <li ><a href="<?php echo U('Aboutus/index');?>" style="font-size:14px;">关于1977模块</a></li>
             <li><a href="<?php echo U('Strength/index');?>" style="font-size:14px;">实力展示模块</a></li>
             <li><a href="<?php echo U('Admission/index');?>" style="font-size:14px;">招生详情模块</a></li>
-            <li><a href="<?php echo U('Consultus/index');?>" style="font-size:14px;">资讯1977模块</a></li>
-          </ul> -->
+            <li><a href="<?php echo U('Consultus/index');?>" style="font-size:14px;">资讯1977模块</a></li>-->
+          </ul>
           <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Visitor/index');?>" style="font-size:14px;">访问者信息</a></li>
             <li ><a href="<?php echo U('Index/changePassword');?>" style="font-size:14px;">修改登录密码</a></li>

@@ -3345,3 +3345,1451 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
 
+[ 2015-09-24T21:45:30+08:00 ] ::1 /taobaoke/admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008826s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-09-24T21:45:30+08:00 ] ::1 /taobaoke/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-09-24T22:15:06+08:00 ] ::1 /taobaoke/admin.php/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011245s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `tbk_admin` [ RunTime:0.2239s ]
+SQL: SELECT * FROM `tbk_admin` WHERE `loginname` = 'admin' LIMIT 1   [ RunTime:0.0492s ]
+SQL: UPDATE `tbk_admin` SET `last_login_time`='2015-09-24 22:15:06' WHERE `id` = 1 [ RunTime:0.1087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022369s ]
+
+[ 2015-09-24T22:15:07+08:00 ] ::1 /taobaoke/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-09-24T22:15:08+08:00 ] ::1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.1133s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-09-24T22:15:09+08:00 ] ::1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载控制器:Homepage
+
+[ 2015-09-24T22:15:32+08:00 ] ::1 /taobaoke/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-09-24T22:15:32+08:00 ] ::1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-09-24T22:15:34+08:00 ] ::1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+ERR: 无法加载控制器:Homepage
+
+[ 2015-09-24T22:15:35+08:00 ] ::1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2015-09-24T22:50:16+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0557s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011420s ]
+
+[ 2015-09-24T22:50:24+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2015-09-24T23:31:04+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033222s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010542s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.1088s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.048916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.048989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.056244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.056379s ]
+
+[ 2015-09-24T23:31:41+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-09-24T23:31:42+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-09-24T23:32:00+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+
+[ 2015-09-24T23:32:49+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022032s ]
+
+[ 2015-09-24T23:32:51+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-09-24T23:33:00+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2015-09-24T23:33:06+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = 0  [ RunTime:0.0003s ]
+SQL: INSERT INTO `tbk_scroll` (`pic_adr`,`indexOrAd`,`sort`,`controller`,`created_time`) VALUES ('/Uploads/img/2015/560417b27d265.png','0','1','admin','2015-09-24 23:33:06') [ RunTime:0.0642s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-09-24T23:33:07+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0543s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-09-24T23:33:10+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-09-24T23:33:11+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-09-24T23:33:13+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-09-24T23:33:14+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-09-24T23:33:15+08:00 ] 127.0.0.1 /taobaoke/admin.php/Visitor/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Undefined index: p /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Controller/VisitorController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_visitor` ORDER BY created_time desc LIMIT 0,11   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_visitor` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2015-09-24T23:33:17+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `indexOrAd` = null ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2015-09-24T23:36:56+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-09-24T23:37:02+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `tbk_scroll`  [ RunTime:0.0002s ]
+SQL: INSERT INTO `tbk_scroll` (`pic_adr`,`sort`,`controller`,`created_time`) VALUES ('/Uploads/img/2015/5604189e4e643.png','1','admin','2015-09-24 23:37:02') [ RunTime:0.0233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-09-24T23:37:03+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.4280s ]
+SQL: SELECT * FROM `tbk_scroll` ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2015-09-24T23:39:31+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/alter.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-09-24T23:39:36+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2015-09-24T23:39:38+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_scroll` ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2015-09-24T23:40:55+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.1073s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INDEX )' at line 1
+
+[ 2015-09-24T23:41:03+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INDEX )' at line 1
+
+[ 2015-09-24T23:50:08+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0364s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INDEX )' at line 1
+
+[ 2015-09-24T23:51:10+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INDEX )' at line 1
+
+[ 2015-09-24T23:52:55+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021992s ]
+
+[ 2015-09-24T23:52:57+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2015-09-24T23:53:13+08:00 ] 127.0.0.1 /taobaoke/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-09-24T23:53:13+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-09-24T23:53:14+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-09-24T23:53:27+08:00 ] 127.0.0.1 /taobaoke/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-09-24T23:53:27+08:00 ] 127.0.0.1 /taobaoke/admin.php/Webinfo/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `tbk_visitor` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_visitor`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_webinfo` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'PHONE' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BEIAN' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'BANQUAN' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tbk_webinfo` WHERE `type` = 'ADDRESS' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-09-24T23:53:29+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-09-24T23:53:31+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE ( sort > 1 AND type = 'INDEX' )  [ RunTime:0.0004s ]
+
+[ 2015-09-24T23:53:46+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-09-24T23:53:47+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/delete_handle.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE ( sort > 1 AND type = 'INDEX' )  [ RunTime:0.0003s ]
+SQL: DELETE FROM `tbk_scroll` WHERE `id` = 2 [ RunTime:0.0383s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-09-24T23:53:48+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2015-09-24T23:54:41+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2015-09-24T23:54:49+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX'  [ RunTime:0.0004s ]
+SQL: INSERT INTO `tbk_scroll` (`pic_adr`,`type`,`sort`,`controller`,`created_time`) VALUES ('/Uploads/img/2015/56041cc939e6a.png','INDEX','1','admin','2015-09-24 23:54:49') [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-09-24T23:54:50+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0338s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-09-24T23:54:53+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/alter.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0836s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-09-24T23:55:07+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/alter_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tbk_scroll` SET `pic_adr`='/Uploads/img/2015/56041cdbd0a1e.png',`controller`='admin',`created_time`='2015-09-24 23:55:07' WHERE `id` = 3 [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2015-09-24T23:55:09+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2015-09-24T23:55:12+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006641s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-09-24T23:55:17+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/add_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX'  [ RunTime:0.0004s ]
+SQL: UPDATE `tbk_scroll` SET `sort`='2' WHERE `id` = 3 [ RunTime:0.0007s ]
+SQL: INSERT INTO `tbk_scroll` (`pic_adr`,`type`,`sort`,`controller`,`created_time`) VALUES ('/Uploads/img/2015/56041ce5e4ca7.png','INDEX','1','admin','2015-09-24 23:55:17') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2015-09-24T23:55:19+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-09-24T23:55:24+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/sort_handle.html?id=3&type=up
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `sort` = 1 AND `type` = 'INDEX' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `tbk_scroll` SET `pic_adr`='/Uploads/img/2015/56041cdbd0a1e.png',`type`='INDEX',`sort`='1',`controller`='admin',`created_time`='2015-09-24 23:55:07' WHERE `id` = 3 [ RunTime:0.0509s ]
+SQL: UPDATE `tbk_scroll` SET `pic_adr`='/Uploads/img/2015/56041ce5e4ca7.png',`type`='INDEX',`sort`='2',`controller`='admin',`created_time`='2015-09-24 23:55:17' WHERE `id` = 4 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-09-24T23:55:25+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2015-09-24T23:55:28+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/sort_handle.html?id=3&type=down
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `sort` = 2 AND `type` = 'INDEX' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tbk_scroll` SET `pic_adr`='/Uploads/img/2015/56041cdbd0a1e.png',`type`='INDEX',`sort`='2',`controller`='admin',`created_time`='2015-09-24 23:55:07' WHERE `id` = 3 [ RunTime:0.0008s ]
+SQL: UPDATE `tbk_scroll` SET `pic_adr`='/Uploads/img/2015/56041ce5e4ca7.png',`type`='INDEX',`sort`='1',`controller`='admin',`created_time`='2015-09-24 23:55:17' WHERE `id` = 4 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-09-24T23:55:29+08:00 ] 127.0.0.1 /taobaoke/admin.php/Homepage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 15 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' /Applications/XAMPP/xamppfiles/htdocs/taobaoke/Admin/Home/Conf/config.php 第 17 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `tbk_scroll` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tbk_scroll` WHERE `type` = 'INDEX' ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
