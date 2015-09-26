@@ -157,6 +157,12 @@ class HomepageController extends CommonController {
         // 获取参数
         $id   = $_GET['id'];
         $type = $_GET['type'];
+        // 判断
+        $where   = array('type' => 'INDEX');
+        $num = M('scroll')->where($where)->count();
+        if($num <= 1){
+            $this->error('排序失败，数量不足');
+        }
         // 获取当前处理的数据
         $c1_data = M('scroll')->find($id);
         $c1_sort = $c1_data['sort'];
