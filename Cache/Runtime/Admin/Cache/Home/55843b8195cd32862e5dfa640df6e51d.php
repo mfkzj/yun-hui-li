@@ -44,18 +44,6 @@
       });
     });
 
-    function callApplicationCount(){
-      $.getJSON("<?php echo U('Index/getApplicationCount');?>", function (data, status, xhr) {
-          if(data != "0")
-          {
-            var text = "<div class='rt'>" + data + "</div>";
-            $("#callApplicationCount").html(text);
-          }else{
-            $("#callApplicationCount").html("");
-          }
-      });
-    }
-
     function iFrameHeight() {
       var ifm= document.getElementById("iframe");
       var subWeb = document.frames ? document.frames["iframe"].document :ifm.contentDocument;
@@ -137,6 +125,7 @@
           </ul>
            <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Homepage/index');?>" style="font-size:14px;">首页模块</a></li>
+            <li><a href="<?php echo U('Advert/index');?>" style="font-size:14px;">广告模块</a></li>
            </ul>
            <ul class="nav nav-sidebar">
             <div class='titleframe'><div class="title" style="font-size:16px;"> 男士服装模块</div></div>
