@@ -2,11 +2,11 @@
 /**
  *  AUTHOR:CMB
  *  DATE:2015/9/26
- *  FUNCTION:女士服装模块（后台）
+ *  FUNCTION:女士服装分类模块（后台）
  */
 namespace Home\Controller;
 use Think\Controller;
-class WomanclothController extends CommonController {
+class WomanclothsortController extends CommonController {
 	
     /* 主页显示 */
     public function index(){
@@ -63,7 +63,7 @@ class WomanclothController extends CommonController {
         {
             echo 'classification表插入数据出错';die;
         }else{
-            $this->success('添加成功',U('Womancloth/index'));
+            $this->success('添加成功',U('Womanclothsort/index'));
         }
     }
 
@@ -103,7 +103,7 @@ class WomanclothController extends CommonController {
         if(!M('classification')->data($data)->save()){
             echo 'classification表更新数据出错';die;
         }else{
-            $this->success('修改成功',U('Womancloth/index'));
+            $this->success('修改成功',U('Womanclothsort/index'));
         }
     }
 
@@ -124,7 +124,7 @@ class WomanclothController extends CommonController {
         {
             echo 'classification表删除数据出错';die;
         }else{
-            $this->success('删除成功',U('Womancloth/index'));
+            $this->success('删除成功',U('Womanclothsort/index'));
         }
     }
 

@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-12">        
             <h1 class="page-header">
-                女士服装模块
+                鞋类模块
             </h1>
         </div>
     </div>
@@ -61,7 +61,7 @@
                             <p>商品分类，并非店铺分类。</p>
                         </div>
                         <div class="col-md-4">
-                            <div style="float:right;"><a href="{:U('Womancloth/add_classification')}" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
+                            <div style="float:right;"><a href="{:U('Shoesort/add_classification')}" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
                         </div>
                     </div>
                 </div>  
@@ -91,12 +91,12 @@
                                 <div align="center">
                                     <div style="width:200px;padding-top:6px;">
                                         <if condition="$key eq 0"> 
-                                            <a href="{:U('Womancloth/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
+                                            <a href="{:U('Shoesort/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
                                         <elseif condition="$key eq count($classification)-1"/>
-                                            <a href="{:U('Womancloth/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                            <a href="{:U('Shoesort/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
                                         <else />
-                                            <a href="{:U('Womancloth/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
-                                            <a href="{:U('Womancloth/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
+                                            <a href="{:U('Shoesort/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                            <a href="{:U('Shoesort/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
                                         </if>
                                     </div>
                                 </div>
@@ -104,8 +104,8 @@
                             <td>
                                 <div align="center">
                                     <div style="width:200px;padding-top:10px;">
-                                        <a href="{:U('Womancloth/alter_classification')}?id={$data.id}" type="button" class="btn btn-success">修 改</a>
-                                        <a href="{:U('Womancloth/delete_classification_handle')}?id={$data.id}" type="button" class="btn btn-danger">删 除</a>
+                                        <a href="{:U('Shoesort/alter_classification')}?id={$data.id}" type="button" class="btn btn-success">修 改</a>
+                                        <a href="{:U('Shoesort/delete_classification_handle')}?id={$data.id}" type="button" class="btn btn-danger">删 除</a>
                                     </div>
                                 </div>
                             </td>

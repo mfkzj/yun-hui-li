@@ -6,7 +6,7 @@
  */
 namespace Home\Controller;
 use Think\Controller;
-class ManclothController extends CommonController {
+class ManclothsortController extends CommonController {
 	
     /* 主页显示 */
     public function index(){
@@ -63,7 +63,7 @@ class ManclothController extends CommonController {
         {
             echo 'classification表插入数据出错';die;
         }else{
-            $this->success('添加成功',U('Mancloth/index'));
+            $this->success('添加成功',U('Manclothsort/index'));
         }
     }
 
@@ -103,7 +103,7 @@ class ManclothController extends CommonController {
         if(!M('classification')->data($data)->save()){
             echo 'classification表更新数据出错';die;
         }else{
-            $this->success('修改成功',U('Mancloth/index'));
+            $this->success('修改成功',U('Manclothsort/index'));
         }
     }
 
@@ -124,7 +124,7 @@ class ManclothController extends CommonController {
         {
             echo 'classification表删除数据出错';die;
         }else{
-            $this->success('删除成功',U('Mancloth/index'));
+            $this->success('删除成功',U('Manclothsort/index'));
         }
     }
 

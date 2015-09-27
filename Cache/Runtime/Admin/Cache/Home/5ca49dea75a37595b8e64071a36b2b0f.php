@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <title></title>
-    <link rel="icon" href="__PUBLIC__/Uploads/img/logo.png">
+    <link rel="icon" href="/taobaoke/Public/Uploads/img/logo.png">
     <!-- Bootstrap core CSS -->
-    <link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet">
-    <script src="__PUBLIC__/Admin/Js/jquery.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/docs.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/ie10-viewport-bug-workaround.js"></script>
+    <link href="/taobaoke/Public/Admin/Css/bootstrap.min.css" rel="stylesheet">
+    <script src="/taobaoke/Public/Admin/Js/jquery.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/bootstrap.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/docs.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Font-awesome core CSS -->
-    <link href="__PUBLIC__/Admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/taobaoke/Public/Admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="__PUBLIC__/Admin/Css/Homepage.css" rel="stylesheet">
+    <link href="/taobaoke/Public/Admin/Css/Homepage.css" rel="stylesheet">
 
     <script type="text/javascript">
         var url;
@@ -47,10 +47,6 @@
         function callmyModal(){
             window.top.window.myModalImage(url);
         }
-
-        function callmyModal_1(u){
-            window.top.window.myModalImage(u);
-        }
     </script>
     
 </head>
@@ -60,7 +56,7 @@
     <div class="row">
         <div class="col-md-12">        
             <h1 class="page-header">
-                添加商品分类
+                添加店铺推荐
             </h1>
         </div>
     </div>
@@ -68,20 +64,32 @@
     <div class="row">
         <div class="col-md-12">
             <ol class="breadcrumb">
-              <li><a href="{:U('Mancloth/index')}">男士服装模块</a></li>
-              <li class="active">添加分类</li>
+              <li><a href="<?php echo U('Womanclothshop/index');?>">女士服装-店铺推荐</a></li>
+              <li class="active">添加店铺推荐</li>
             </ol>
         </div>
     </div>
-    <form class="form-signin" enctype="multipart/form-data" role="form" action="{:U('Mancloth/add_classification_handle')}" method='post' id="form">
+    <form class="form-signin" enctype="multipart/form-data" role="form" action="<?php echo U('Womanclothshop/add_handle');?>" method='post' id="form">
     <!-- 主体 -->
     <div class="row">
         <div class="col-md-12">
             <table class="table table-bordered">
               <tbody>
                 <tr>
-                  <td>名称:</td>
-                  <td><input name="name" type="text" class="form-control" style="width:320px;" value="" placeholder="请输入名称"></td>
+                  <td>店铺名称:</td>
+                  <td><input name="name" type="text" class="form-control" style="width:320px;" placeholder="请输入姓名"></td>
+                </tr>
+                <tr>
+                  <td>链接地址：</td>
+                  <td><input name="url" type="text" class="form-control" style="width:400px;" placeholder="请输入店铺链接地址" value="https://"></td>
+                </tr>
+                <tr>
+                  <td>上传图片:</td>
+                  <td><input name="image" type="file" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>上传预览:</td>
+                    <td id="imput"><p id="altput" >上传后才可预览，请选择文件。</p></td>
                 </tr>
                 <tr>
                   <td>是否置顶：</td>
@@ -90,7 +98,7 @@
                 </tr>
               </tbody>
             </table>
-            <input name="id" value="" type="hidden" >
+            <input id="img" name="img" value="0" type="hidden" >
             <div style="float:right;"><button type="submit" class="btn btn-primary">提 交</button></div>
         </div>
     </div>
@@ -100,7 +108,7 @@
         <div class="col-md-12">
             <div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin">
                 <h4>说明</h4>
-                <p>添加商品分类。</p>
+                <p>添加时必须要上传图片，而且各项都需要填好。</p>
             </div>
         </div>
     </div>

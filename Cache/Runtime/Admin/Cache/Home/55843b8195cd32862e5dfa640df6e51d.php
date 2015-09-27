@@ -38,6 +38,10 @@
           $(this).attr('class','active');
       });
       callApplicationCount();
+      $("#myModalo").click(function(){
+        var $d = $(this).html();
+        parent.window.location.href = $d;
+      });
     });
 
     function callApplicationCount(){
@@ -72,6 +76,11 @@
     function myModalText(text){
       $("#myModalt").html(text);
       $("#myModalText").modal('toggle');
+    }
+
+    function myModalUrl(text){
+      $("#myModalo").html(text);
+      $("#myModalUrl").modal('toggle');
     }
 
     </script> 
@@ -128,9 +137,29 @@
           </ul>
            <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Homepage/index');?>" style="font-size:14px;">首页模块</a></li>
+           </ul>
+           <ul class="nav nav-sidebar">
+            <div class='titleframe'><div class="title" style="font-size:16px;"> 男士服装模块</div></div>
+            <li ><a href="<?php echo U('Manclothsort/index');?>" style="font-size:14px;">－商品分类</a></li>
+            <li ><a href="<?php echo U('Mancloth/index');?>" style="font-size:14px;">－单品推介</a></li>
+            <li ><a href="<?php echo U('Manclothshop/index');?>" style="font-size:14px;">－店铺推荐</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+            <div class='titleframe'><div class="title" style="font-size:16px;"> 女士服装模块</div></div>
+            <li ><a href="<?php echo U('Womanclothsort/index');?>" style="font-size:14px;">－商品分类</a></li>
+            <li ><a href="<?php echo U('Mancloth/index');?>" style="font-size:14px;">－单品推介</a></li>
+            <li ><a href="<?php echo U('Womanclothshop/index');?>" style="font-size:14px;">－店铺推荐</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+            <div class='titleframe'><div class="title" style="font-size:16px;"> 鞋类模块</div></div>
+            <li ><a href="<?php echo U('Shoesort/index');?>" style="font-size:14px;">－商品分类</a></li>
+            <li ><a href="<?php echo U('Mancloth/index');?>" style="font-size:14px;">－单品推介</a></li>
+            <li ><a href="<?php echo U('Shoeshop/index');?>" style="font-size:14px;">－店铺推荐</a></li>
+            </ul>
+<!--             <ul class="nav nav-sidebar">
             <li ><a href="<?php echo U('Mancloth/index');?>" style="font-size:14px;">男士服装模块</a></li>
             <li><a href="<?php echo U('Womancloth/index');?>" style="font-size:14px;">女士服装模块</a></li>
-            <li><a href="<?php echo U('Shoe/index');?>" style="font-size:14px;">鞋类模块</a></li>
+            <li><a href="<?php echo U('Shoe/index');?>" style="font-size:14px;">鞋类模块</a></li> -->
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="<?php echo U('Visitor/index');?>" style="font-size:14px;">访问者信息</a></li>
@@ -165,6 +194,17 @@
     <div class="modal-content">
       <div class="modal-body">
         <p id="myModalt" ></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_Text -->
+<div class="modal fade" id="myModalUrl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <a id="myModalo"></a>
       </div>
     </div>
   </div>

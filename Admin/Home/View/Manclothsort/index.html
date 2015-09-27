@@ -61,7 +61,7 @@
                             <p>商品分类，并非店铺分类。</p>
                         </div>
                         <div class="col-md-4">
-                            <div style="float:right;"><a href="{:U('Mancloth/add_classification')}" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
+                            <div style="float:right;"><a href="{:U('Manclothsort/add_classification')}" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
                         </div>
                     </div>
                 </div>  
@@ -91,12 +91,12 @@
                                 <div align="center">
                                     <div style="width:200px;padding-top:6px;">
                                         <if condition="$key eq 0"> 
-                                            <a href="{:U('Mancloth/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
+                                            <a href="{:U('Manclothsort/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
                                         <elseif condition="$key eq count($classification)-1"/>
-                                            <a href="{:U('Mancloth/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                            <a href="{:U('Manclothsort/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
                                         <else />
-                                            <a href="{:U('Mancloth/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
-                                            <a href="{:U('Mancloth/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
+                                            <a href="{:U('Manclothsort/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                            <a href="{:U('Manclothsort/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
                                         </if>
                                     </div>
                                 </div>
@@ -104,8 +104,8 @@
                             <td>
                                 <div align="center">
                                     <div style="width:200px;padding-top:10px;">
-                                        <a href="{:U('Mancloth/alter_classification')}?id={$data.id}" type="button" class="btn btn-success">修 改</a>
-                                        <a href="{:U('Mancloth/delete_classification_handle')}?id={$data.id}" type="button" class="btn btn-danger">删 除</a>
+                                        <a href="{:U('Manclothsort/alter_classification')}?id={$data.id}" type="button" class="btn btn-success">修 改</a>
+                                        <a href="{:U('Manclothsort/delete_classification_handle')}?id={$data.id}" type="button" class="btn btn-danger">删 除</a>
                                     </div>
                                 </div>
                             </td>

@@ -2,11 +2,11 @@
 /**
  *  AUTHOR:CMB
  *  DATE:2015/9/26
- *  FUNCTION:鞋类模块（后台）
+ *  FUNCTION:鞋类分类（后台）
  */
 namespace Home\Controller;
 use Think\Controller;
-class ShoeController extends CommonController {
+class ShoesortController extends CommonController {
 	
     /* 主页显示 */
     public function index(){
@@ -63,7 +63,7 @@ class ShoeController extends CommonController {
         {
             echo 'classification表插入数据出错';die;
         }else{
-            $this->success('添加成功',U('Shoe/index'));
+            $this->success('添加成功',U('Shoesort/index'));
         }
     }
 
@@ -103,7 +103,7 @@ class ShoeController extends CommonController {
         if(!M('classification')->data($data)->save()){
             echo 'classification表更新数据出错';die;
         }else{
-            $this->success('修改成功',U('Shoe/index'));
+            $this->success('修改成功',U('Shoesort/index'));
         }
     }
 
@@ -124,7 +124,7 @@ class ShoeController extends CommonController {
         {
             echo 'classification表删除数据出错';die;
         }else{
-            $this->success('删除成功',U('Shoe/index'));
+            $this->success('删除成功',U('Shoesort/index'));
         }
     }
 

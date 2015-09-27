@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <title></title>
-    <link rel="icon" href="__PUBLIC__/Uploads/img/logo.png">
+    <link rel="icon" href="/taobaoke/Public/Uploads/img/logo.png">
     <!-- Bootstrap core CSS -->
-    <link href="__PUBLIC__/Admin/Css/bootstrap.min.css" rel="stylesheet">
-    <script src="__PUBLIC__/Admin/Js/jquery.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/docs.min.js"></script>
-    <script src="__PUBLIC__/Admin/Js/ie10-viewport-bug-workaround.js"></script>
+    <link href="/taobaoke/Public/Admin/Css/bootstrap.min.css" rel="stylesheet">
+    <script src="/taobaoke/Public/Admin/Js/jquery.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/bootstrap.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/docs.min.js"></script>
+    <script src="/taobaoke/Public/Admin/Js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Font-awesome core CSS -->
-    <link href="__PUBLIC__/Admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/taobaoke/Public/Admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <link href="__PUBLIC__/Admin/Css/Webinfo.css" rel="stylesheet">
+    <link href="/taobaoke/Public/Admin/Css/Webinfo.css" rel="stylesheet">
     <script type="text/javascript">  
         $(document).ready(function() 
         {  
@@ -30,7 +30,7 @@
         }
 
         function callmyModalText(id){
-            $.getJSON("{:U('Strength/get_achievement_status')}?id="+id, function (data, status, xhr) {
+            $.getJSON("<?php echo U('Strength/get_achievement_status');?>?id="+id, function (data, status, xhr) {
                 window.top.window.myModalText(data);
             });
         }
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-12">        
             <h1 class="page-header">
-                鞋类模块
+                女士服装模块
             </h1>
         </div>
     </div>
@@ -61,7 +61,7 @@
                             <p>商品分类，并非店铺分类。</p>
                         </div>
                         <div class="col-md-4">
-                            <div style="float:right;"><a href="{:U('Shoe/add_classification')}" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
+                            <div style="float:right;"><a href="<?php echo U('Womanclothsort/add_classification');?>" style="width:100px;"type="button" class="btn btn-primary">添加分类</a></div>
                         </div>
                     </div>
                 </div>  
@@ -75,42 +75,38 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <foreach name='classification' item ='data' key='key'>
-                        <tr>
+                        <?php if(is_array($classification)): foreach($classification as $key=>$data): ?><tr>
                             <th scope="row">
                                 <div align="center">
-                                    <div style="padding-top:15px;">{$key+1}</div>
+                                    <div style="padding-top:15px;"><?php echo ($key+1); ?></div>
                                 </div>
                             </th>
                             <td>
                                 <div align="center">
-                                    <div style="padding-top:15px;">{$data.name}</div>
+                                    <div style="padding-top:15px;"><?php echo ($data["name"]); ?></div>
                                 </div>
                             </td>
                             <td>
                                 <div align="center">
                                     <div style="width:200px;padding-top:6px;">
-                                        <if condition="$key eq 0"> 
-                                            <a href="{:U('Shoe/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
-                                        <elseif condition="$key eq count($classification)-1"/>
-                                            <a href="{:U('Shoe/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
-                                        <else />
-                                            <a href="{:U('Shoe/sort_classification_handle')}?id={$data.id}&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
-                                            <a href="{:U('Shoe/sort_classification_handle')}?id={$data.id}&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
-                                        </if>
+                                        <?php if($key == 0): ?><a href="<?php echo U('Womanclothsort/sort_classification_handle');?>?id=<?php echo ($data["id"]); ?>&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a>
+                                        <?php elseif($key == count($classification)-1): ?>
+                                            <a href="<?php echo U('Womanclothsort/sort_classification_handle');?>?id=<?php echo ($data["id"]); ?>&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                        <?php else: ?>
+                                            <a href="<?php echo U('Womanclothsort/sort_classification_handle');?>?id=<?php echo ($data["id"]); ?>&type=up"class="btn btn-default"><i class="icon-angle-up"></i></a>
+                                            <a href="<?php echo U('Womanclothsort/sort_classification_handle');?>?id=<?php echo ($data["id"]); ?>&type=down"class="btn btn-default"><i class="icon-angle-down"></i></a><?php endif; ?>
                                     </div>
                                 </div>
                             </td>
                             <td>
                                 <div align="center">
                                     <div style="width:200px;padding-top:10px;">
-                                        <a href="{:U('Shoe/alter_classification')}?id={$data.id}" type="button" class="btn btn-success">修 改</a>
-                                        <a href="{:U('Shoe/delete_classification_handle')}?id={$data.id}" type="button" class="btn btn-danger">删 除</a>
+                                        <a href="<?php echo U('Womanclothsort/alter_classification');?>?id=<?php echo ($data["id"]); ?>" type="button" class="btn btn-success">修 改</a>
+                                        <a href="<?php echo U('Womanclothsort/delete_classification_handle');?>?id=<?php echo ($data["id"]); ?>" type="button" class="btn btn-danger">删 除</a>
                                     </div>
                                 </div>
                             </td>
-                        </tr>
-                        </foreach>
+                        </tr><?php endforeach; endif; ?>
                     </tbody>
                 </table>    
             </div>
