@@ -44,6 +44,10 @@
             });
         });
 
+        function callmyModal_1(u){
+            window.top.window.myModalImage(u);
+        }
+
         function callmyModal(){
             window.top.window.myModalImage(url);
         }
@@ -108,7 +112,7 @@
         <div class="col-md-12">
             <div class="bs-callout bs-callout-info" id="callout-alerts-dismiss-plugin">
                 <h4>说明</h4>
-                <p>男士服装-店铺推荐添加店铺推荐。</p>
+                <p>修改时不一定要上传图片，如果不用修改图片直接改其他项然后点添加即可完成修改。</p>
             </div>
         </div>
     </div>
