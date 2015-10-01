@@ -42,6 +42,20 @@
           eventB:'mouseleave'
         });
       });
+
+      //加入收藏
+    function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL); 
+      try{   
+        window.external.addFavorite(sURL, sTitle);   
+      }catch(e) {   
+        try{   
+          window.sidebar.addPanel(sTitle, sURL, "");   
+        }catch (e){   
+          alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }   
+      }
+    }
     </script>
   </head>
   <body>
@@ -52,12 +66,13 @@
           </div>
           <div class="col-md-10">
             <div class="row">
-              <div class="col-md-2 sign">男士服装</div>
+              <div class="col-md-2 sign"><?php echo ($title); ?></div>
               <a href="<?php echo U('Production/index');?>"><div class="col-md-1 active">单品推介</div></a>
               <a href="<?php echo U('Shop/index');?>"><div class="col-md-1 choice">店铺推荐</div></a>
               <div class="col-md-4 navcell"></div>
-              <div class="col-md-2 navcell right"><a href="">收藏BOOKMARK+</a></div>
-              <div class="col-md-3 navcell right"><a href="">服务QQ:XXXXXXXXX</a></div>
+              <div class="col-md-2 navcell">
+              <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>
+              <div class="col-md-2 navcell"><a href="" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏BOOKMARK+</a></div>
             </div>
           </div>
         </div>
@@ -73,19 +88,7 @@
         <div class="col-md-10">
           <div class="marquee"> 
             <ul>
-              <li><img src="/taobaoke/Public/Index/img/scroll1.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll2.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll3.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll4.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll5.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll6.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll7.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll1.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll2.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll3.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll4.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll5.png"/></li>
-              <li><img src="/taobaoke/Public/Index/img/scroll6.png"/></li>
+              <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/taobaoke<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
             </ul>
           </div>
         </div>
@@ -141,11 +144,9 @@
                     <a href=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">分类<span class="caret"></span></a>
 
                     <ul class="dropdown-menu">
-                      <li><a href="#">分类a</a></li>
-                      <li><a href="#">分类b</a></li>
-                      <li><a href="#">分类c</a></li>
+                      <?php if(is_array($classification)): foreach($classification as $key=>$data): ?><li><a href="<?php echo U('Production/Womancloth');?>?classify=<?php echo ($data["id"]); ?>"><?php echo ($data["name"]); ?></a></li><?php endforeach; endif; ?>
                       <li role="separator" class="divider"></li>
-                      <li><a href="#">分类d</a></li>
+                      <li><a href="<?php echo U('Production/Womancloth');?>?classify=all">全部</a></li>
                     </ul>
                   </div>
                 </div>
@@ -175,19 +176,20 @@
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <?php if(is_array($scroll_production)): foreach($scroll_production as $k=>$vo): if($key == 0): ?><li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>" class="active"></li>
+                <?php else: ?>
+                  <li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>"></li><?php endif; endforeach; endif; ?>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="/taobaoke/Public/Index/img/ad2.png" style="width:100%;padding:0px;">
-              </div>
-              <div class="item">
-                <img src="/taobaoke/Public/Index/img/ad2.png" style="width:100%;padding:0px;">
-              </div>
+              <?php if(is_array($scroll_production)): foreach($scroll_production as $key=>$data): if($key == 0): ?><div class="item active">
+                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
+                  </div>
+                <?php else: ?>
+                  <div class="item">
+                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
+                  </div><?php endif; endforeach; endif; ?>
             </div>
 
             <!-- Controls -->
@@ -206,7 +208,7 @@
       </div>
     </div>
 
-    <div class="container1" style="margin-top:10px;">
+    <div class="container1" style="padding-top:10px;">
       <div class="row">
         <div class="col-md-1">
         </div>
@@ -214,7 +216,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <div class="col-md-3">
+<!--                 <div class="col-md-3">
                   <div class="thumbnail framework" style="border:none;padding:0px;">
                     <img src="/taobaoke/Public/Index/img/pic5.png" >
                     <div class="caption">
@@ -222,61 +224,12 @@
                       <p class="price">￥399</p>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
-                    <div class="caption">
-                      <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
-                      <p class="price">￥399</p>
-                    </div>
-                  </div>
-                </div>
+                </div> -->
+                <?php if(is_array($production)): foreach($production as $key=>$data): ?><div class="col-md-4">
+                <a class="ef" href="<?php echo ($data["url"]); ?>"> <div class="J_super_item item-mod  super-item-start"><img style="display: block;" class="img lazy" alt="<?php echo ($data["name"]); ?>" src="<?php echo ($data["cover"]); ?>"><div class="J_item_notice msg-soon"></div><h4 class="title"><?php echo ($data["name"]); ?></h4><div class="money desc"><p class="price">                        ¥<strong><?php echo ($data["price_now"]); ?></strong><del>¥<?php echo ($data["price_original"]); ?></del></p><p class="fl clearfix"><strong>-<?php echo ($data["deduction"]); ?></strong><i class="i-gmhf">购买后返<span><?php echo ($data["rebate"]); ?>%</span></i></p></div><a class="mod-btn J_item_link J_item_btn ht J_nodelog" href="javascript:void(0);" data-href="http://fun.51fanli.com/goshop/go?id=712&amp;go=http%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D520670825497&amp;pid=520670825497&amp;lc=shouye_brand" target="_blank">马上抢</a></div>
+                </a>
+                </div><?php endforeach; endif; ?>
+                
               </div>
             </div>
           </div>
@@ -303,9 +256,9 @@ function getParameter(name) {
 }
 //init
 $(function(){
-  var totalPage = 20;
-  var totalRecords = 390;
-  var pageNo = getParameter('pno');
+  var totalPage = <?php echo ($perPage); ?>;
+  var totalRecords = <?php echo ($count); ?>;
+  var pageNo = getParameter('p');
   if(!pageNo){
     pageNo = 1;
   }
@@ -318,11 +271,11 @@ $(function(){
     //总数据条数
     totalRecords : totalRecords,
     //链接前部
-    hrefFormer : 'pager_test_orange_color',
+    hrefFormer : 'Womancloth',
     //链接尾部
     hrefLatter : '.html',
     getLink : function(n){
-      return this.hrefFormer + this.hrefLatter + "?pno="+n;
+      return this.hrefFormer + this.hrefLatter + "?p="+n +"&classify=<?php echo ($classify_id); ?>";
     }
     
     ,lang       : {
@@ -358,22 +311,63 @@ $(function(){
 });
 </script>
 
-  <!--
-  <div class="container1" style="margin-top:10px;">
+  <div class="container2" style="margin-top:10px;">
     <div class="row">
       <div class="col-md-1">
       </div>
       <div class="col-md-10">
         <div class="row">
-          <div class="col-md-12">
-            <img src="./image/ad3.png" style="width:100%" />
-          </div>
+          <div class="footer_server_list">
+          <dl>
+              <dt>购物指南</dt>
+                <dd>
+                 <a href="http://fanxian.egou.com/memberRegister.do" target="_blank">免费注册</a>
+                 <a href="http://fanxian.egou.com/help/shang_yi.html" target="_blank">返利指导</a>
+                 <a href="http://fanxian.egou.com/help/nafanxian.html#fx22" target="_blank">提现指导</a>
+                </dd>
+            </dl>
+          <dl>
+              <dt>常用服务</dt>
+                <dd>
+                 <a href="http://fanxian.egou.com/myegoutraceorder.do" target="_blank">跟单查询</a>
+                 <a href="http://fanxian.egou.com/help/" target="_blank">网站帮助</a>
+                 <a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问</a>
+                </dd>
+            </dl>
+          <dl>
+              <dt>商家服务</dt>
+                <dd>
+                 <a href="http://zhaoshang.egou.com/temai/" target="_blank">商家入驻</a>
+                 <a href="http://fanxian.egou.com/help/advertisement.html" target="_blank">广告合作</a>
+                 <a href="http://fanxian.egou.com/help/links.html" target="_blank">友情链接</a>
+                </dd>
+            </dl>
+          <dl>
+              <dt>关于易购</dt>
+                <dd>
+                 <a href="http://fanxian.egou.com/help/aboutegou.html" target="_blank">了解易购</a>
+                 <a href="http://fanxian.egou.com/help/zhaopin.html" target="_blank">加入易购</a>
+                 <a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们</a>
+                </dd>
+            </dl>
+          <dl class="two">
+              <dt>关注我们</dt>
+                <dd>
+                 <a href="http://weibo.com/wwwegoucom/home" target="_blank">新浪微博</a>
+                 <a href="http://user.qzone.qq.com/1494014167/2" target="_blank">QQ空间</a>
+                 <a href="javascript:alert('请扫描下方的二维码，谢谢！');">官方微信</a>
+                </dd>
+            </dl>
+            <dl class="last">
+              <dd><p class="font16">400-0060-666</p><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
+            </dl>
+        </div>
         </div>
       </div>
       <div class="col-md-1">
       </div>
     </div>
-  </div>-->
+  </div>
   
   <footer>
     <div class="row">
@@ -381,7 +375,7 @@ $(function(){
       </div>
       <div class="col-md-6">
         <div class="middle">
-          <a href="#">条款与细则</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">黔ICP备15003298号</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">adidas版权所有</a>
+          <a href="#">条款与细则</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><?php echo ($beian); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><?php echo ($banquan); ?></a>
         </div>
       </div>
       <div class="col-md-3">

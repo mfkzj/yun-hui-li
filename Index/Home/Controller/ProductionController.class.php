@@ -2,7 +2,106 @@
 namespace Home\Controller;
 use Think\Controller;
 class ProductionController extends Controller {
+
     public function index(){
-        $this->display();
+    	echo '无法进入';die;
     }
+
+    public function mancloth(){
+    	$type = "MANCLOTH";
+    	$this->getShopScroll();
+    	$this->getProductionScroll();
+    	$this->getProduction($type);
+        $this->getClassification($type);
+        $this->getWeiInfo();
+    	$this->title = '男士服装';
+    	$this->display();
+    }
+
+    public function womancloth(){
+    	$type = "WOMANCLOTH";
+    	$this->getShopScroll();
+    	$this->getProductionScroll();
+    	$this->getProduction($type);
+    	$this->getClassification($type);
+        $this->getWeiInfo();
+    	$this->title = '女士服装';
+    	$this->display();
+    }
+
+    public function shoe(){
+    	$type = "SHOE";
+    	$this->getShopScroll();
+    	$this->getProductionScroll();
+    	$this->getProduction($type);
+        $this->getClassification($type);
+        $this->getWeiInfo();
+    	$this->title = '鞋类';
+    	$this->display();
+    }
+
+    public function getShopScroll(){
+    	// 取商铺幻灯片
+        $where = array('type' => 'SHOP');
+        $scroll_shop = M('scroll')->where($where)->order('sort')->select();
+ 		while(COUNT($scroll_shop)<12){
+ 			$scroll_shop = array_merge($scroll_shop,$scroll_shop);
+ 		}
+ 		$this->scroll_shop = $scroll_shop;
+    }
+
+    public function getProductionScroll(){
+    	// 取首页幻灯片
+        $where = array('type' => 'PRODUCTION');
+        $this->scroll_production = M('scroll')->where($where)->order('sort')->select();
+    }
+
+    public function getProduction($type){
+    	$classify_id = $_GET['classify'];
+    	if($classify_id == "" || $classify_id == 0 || $classify_id  == null || $classify_id  == 'all'){
+    		// 条件
+        	$where       = array('type' => $type);
+    	}else{
+    		// 条件
+        	$where       = array('type' => $type , 'classify_id' => $classify_id);
+    	}
+        // 获得当前页数
+        $pageNumber  = $_GET['p'];
+        if($pageNumber == "") $pageNumber = 0;
+        // 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
+        $production  = M('production')->where($where)->order('sort')->page($pageNumber,C('分页'))->select();
+        // 查询满足要求的总记录数
+        $count       = M('production')->where($where)->count();
+		
+        for($i=0;$i<COUNT($production);$i++){
+        	$rebate = $production[$i]['rebate'];
+        	$production[$i]['deduction'] = ($rebate/100)*$production[$i]['price_now'];
+        }
+
+		$perPage = $count / C('分页');
+
+        // 数据映射
+        $this->production = $production;
+        $this->count      = $count;
+        $this->perPage    = $perPage;
+        $this->classify_id  = $classify_id; 
+
+    }
+
+    public function getClassification($type){
+    	// 条件
+        $where       = array('type' => $type);
+    	// 分类
+        $this->classification = M('classification')->where($where)->order('sort')->select();
+
+    }
+
+    public function getWeiInfo(){
+        $beian   = M('webinfo')->where(array('type' => 'BEIAN'))->find();
+        $banquan = M('webinfo')->where(array('type' => 'BANQUAN'))->find();
+
+        $this->beian   = $beian['content'];
+        $this->banquan = $banquan['content'];
+    }
+
 }

@@ -67,8 +67,8 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2 sign">{$title}</div>
-              <a href="{:U('Production/index')}"><div class="col-md-1 active">单品推介</div></a>
-              <a href="{:U('Shop/index')}"><div class="col-md-1 choice">店铺推荐</div></a>
+              <a href="{:U('Production/Shoe')}"><div class="col-md-1 choice">单品推介</div></a>
+              <a href="{:U('Shop/Shoe')}"><div class="col-md-1 active">店铺推荐</div></a>
               <div class="col-md-4 navcell"></div>
               <div class="col-md-2 navcell">
               <a href="tencent://message/?uin={$QQ.content}&Site=&Menu=yes">服务QQ</a></div>
@@ -141,27 +141,14 @@
                 <div class="col-md-1">
                   <a href="{:U('Index/index')}">首页</a>
                 </div>
-                <div class="col-md-1">
-                  <div class="btn-group">
-                    <a href=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">分类<span class="caret"></span></a>
-
-                    <ul class="dropdown-menu">
-                      <foreach item="data" name="classification">
-                        <li><a href="{:U('Production/Womancloth')}?classify={$data.id}">{$data.name}</a></li>
-                      </foreach>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="{:U('Production/Womancloth')}?classify=all">全部</a></li>
-                    </ul>
-                  </div>
+                <div class="col-md-1" style="padding:0px">
+                  <a href="{:U('Shop/Mancloth')}">男士服装</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="">男士服装</a>
-                </div>
-                <div class="col-md-1" style="padding:0px">
-                  <a href="">女士服装</a>
+                  <a href="{:U('Shop/Womancloth')}">女士服装</a>
                 </div>
                 <div class="col-md-1">
-                  <a href="">鞋</a>
+                  <a href="{:U('Shop/Shoe')}">鞋</a>
                 </div>
               </div>
               <div class="col-md-1">
@@ -239,8 +226,13 @@
                 </div> -->
                 <foreach name="production" item="data">
                 <div class="col-md-4">
-                <a class="ef" href="{$data.url}"> <div class="J_super_item item-mod  super-item-start"><img style="display: block;" class="img lazy" alt="{$data.name}" src="{$data.cover}"><div class="J_item_notice msg-soon"></div><h4 class="title">{$data.name}</h4><div class="money desc"><p class="price">                        ¥<strong>{$data.price_now}</strong><del>¥{$data.price_original}</del></p><p class="fl clearfix"><strong>-{$data.deduction}</strong><i class="i-gmhf">购买后返<span>{$data.rebate}%</span></i></p></div><a class="mod-btn J_item_link J_item_btn ht J_nodelog" href="javascript:void(0);" data-href="http://fun.51fanli.com/goshop/go?id=712&amp;go=http%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D520670825497&amp;pid=520670825497&amp;lc=shouye_brand" target="_blank">马上抢</a></div>
-                </a>
+                  <a class="ef" href="{$data.url}">
+                    <div class="J_super_item item-mod  super-item-start">
+                      <img style="display: block;" class="img lazy" alt="{$data.name}" src="__ROOT__{$data.pic_adr}">
+                      <div class="J_item_notice msg-soon"></div>
+                      <h4 class="title">{$data.name}</h4>
+                    </div>
+                  </a>
                 </div>
                 </foreach>
                 
@@ -285,11 +277,11 @@ $(function(){
     //总数据条数
     totalRecords : totalRecords,
     //链接前部
-    hrefFormer : 'Womancloth',
+    hrefFormer : 'Shoe',
     //链接尾部
     hrefLatter : '.html',
     getLink : function(n){
-      return this.hrefFormer + this.hrefLatter + "?p="+n +"&classify={$classify_id}";
+      return this.hrefFormer + this.hrefLatter + "?p="+n;
     }
     
     ,lang       : {

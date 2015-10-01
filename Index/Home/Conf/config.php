@@ -18,6 +18,8 @@ $appConfig =  array(
 
     // 设置cookie保存的时间
     'SAVE_COOKIE_TIME' => 7200,
+
+    '分页' => 15,
 );
 
 return array_merge($appConfig, $dbConfig);

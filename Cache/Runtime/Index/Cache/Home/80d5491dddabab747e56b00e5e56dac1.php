@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
@@ -7,27 +7,27 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="__PUBLIC__/icon.ico">
+    <link rel="icon" href="/taobaoke/Public/icon.ico">
 
     <title>单品推介</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="__PUBLIC__/Index/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap.min.css">
 
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="__PUBLIC__/Index/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap-theme.min.css">
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="__PUBLIC__/Index/bootstrap/js/jquery.min.js"></script>
+    <script src="/taobaoke/Public/Index/bootstrap/js/jquery.min.js"></script>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="__PUBLIC__/Index/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/taobaoke/Public/Index/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="__PUBLIC__/Index/js/scroll.js"></script>
-    <link href="__PUBLIC__/Index/css/production.css" rel="stylesheet">
+    <script src="/taobaoke/Public/Index/js/scroll.js"></script>
+    <link href="/taobaoke/Public/Index/css/production.css" rel="stylesheet">
 
-    <script type="text/javascript" src="__PUBLIC__/Index/js/kkpager.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Index/css/kkpager_orange.css" />
+    <script type="text/javascript" src="/taobaoke/Public/Index/js/kkpager.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/taobaoke/Public/Index/css/kkpager_orange.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -66,12 +66,12 @@
           </div>
           <div class="col-md-10">
             <div class="row">
-              <div class="col-md-2 sign">{$title}</div>
-              <a href="{:U('Production/index')}"><div class="col-md-1 active">单品推介</div></a>
-              <a href="{:U('Shop/index')}"><div class="col-md-1 choice">店铺推荐</div></a>
+              <div class="col-md-2 sign"><?php echo ($title); ?></div>
+              <a href="<?php echo U('Production/index');?>"><div class="col-md-1 choice">单品推介</div></a>
+              <a href="<?php echo U('Shop/index');?>"><div class="col-md-1 active">店铺推荐</div></a>
               <div class="col-md-4 navcell"></div>
               <div class="col-md-2 navcell">
-              <a href="tencent://message/?uin={$QQ.content}&Site=&Menu=yes">服务QQ</a></div>
+              <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>
               <div class="col-md-2 navcell"><a href="" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏BOOKMARK+</a></div>
             </div>
           </div>
@@ -88,9 +88,7 @@
         <div class="col-md-10">
           <div class="marquee"> 
             <ul>
-              <foreach name="scroll_shop" item="data" key="k" >
-                 <li><img src="__ROOT__{$data.pic_adr}"/></li>
-              </foreach>
+              <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/taobaoke<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
             </ul>
           </div>
         </div>
@@ -105,12 +103,12 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2">
-                <img src="__PUBLIC__/Index/img/logo.png" />
+                <img src="/taobaoke/Public/Index/img/logo.png" />
               </div>
               <div class="col-md-3">
               </div>
               <div class="col-md-2">
-                <img src="__PUBLIC__/Index/img/adv1.png" style="width:100%;padding:0px;" />
+                <img src="/taobaoke/Public/Index/img/adv1.png" style="width:100%;padding:0px;" />
               </div>
               <div class="col-md-2">
               </div>
@@ -139,29 +137,16 @@
               </div>
               <div class="col-md-10">
                 <div class="col-md-1">
-                  <a href="{:U('Index/index')}">首页</a>
-                </div>
-                <div class="col-md-1">
-                  <div class="btn-group">
-                    <a href=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">分类<span class="caret"></span></a>
-
-                    <ul class="dropdown-menu">
-                      <foreach item="data" name="classification">
-                        <li><a href="{:U('Production/Womancloth')}?classify={$data.id}">{$data.name}</a></li>
-                      </foreach>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="{:U('Production/Womancloth')}?classify=all">全部</a></li>
-                    </ul>
-                  </div>
+                  <a href="<?php echo U('Index/index');?>">首页</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="">男士服装</a>
+                  <a href="<?php echo U('Shop/Mancloth');?>">男士服装</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="">女士服装</a>
+                  <a href="<?php echo U('Shop/Womancloth');?>">女士服装</a>
                 </div>
                 <div class="col-md-1">
-                  <a href="">鞋</a>
+                  <a href="<?php echo U('Shop/Shoe');?>">鞋</a>
                 </div>
               </div>
               <div class="col-md-1">
@@ -180,28 +165,20 @@
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <foreach name="scroll_production" item="vo" key="k" >
-                <if condition="$key eq 0">
-                  <li data-target="#carousel-example-generic" data-slide-to="{$key}" class="active"></li>
-                <else />
-                  <li data-target="#carousel-example-generic" data-slide-to="{$key}"></li>
-                </if>
-              </foreach>
+              <?php if(is_array($scroll_production)): foreach($scroll_production as $k=>$vo): if($key == 0): ?><li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>" class="active"></li>
+                <?php else: ?>
+                  <li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>"></li><?php endif; endforeach; endif; ?>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-              <foreach name="scroll_production" item="data" key="key" >
-                <if condition="$key eq 0">
-                   <div class="item active">
-                    <img src="__ROOT__{$data.pic_adr}" style="width:100%;padding:0px;"/>
+              <?php if(is_array($scroll_production)): foreach($scroll_production as $key=>$data): if($key == 0): ?><div class="item active">
+                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
                   </div>
-                <else />
+                <?php else: ?>
                   <div class="item">
-                    <img src="__ROOT__{$data.pic_adr}" style="width:100%;padding:0px;"/>
-                  </div>
-                </if>
-              </foreach>
+                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
+                  </div><?php endif; endforeach; endif; ?>
             </div>
 
             <!-- Controls -->
@@ -230,19 +207,17 @@
               <div class="row">
 <!--                 <div class="col-md-3">
                   <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="__PUBLIC__/Index/img/pic5.png" >
+                    <img src="/taobaoke/Public/Index/img/pic5.png" >
                     <div class="caption">
                       <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
                       <p class="price">￥399</p>
                     </div>
                   </div>
                 </div> -->
-                <foreach name="production" item="data">
-                <div class="col-md-4">
-                <a class="ef" href="{$data.url}"> <div class="J_super_item item-mod  super-item-start"><img style="display: block;" class="img lazy" alt="{$data.name}" src="{$data.cover}"><div class="J_item_notice msg-soon"></div><h4 class="title">{$data.name}</h4><div class="money desc"><p class="price">                        ¥<strong>{$data.price_now}</strong><del>¥{$data.price_original}</del></p><p class="fl clearfix"><strong>-{$data.deduction}</strong><i class="i-gmhf">购买后返<span>{$data.rebate}%</span></i></p></div><a class="mod-btn J_item_link J_item_btn ht J_nodelog" href="javascript:void(0);" data-href="http://fun.51fanli.com/goshop/go?id=712&amp;go=http%3A%2F%2Fdetail.tmall.com%2Fitem.htm%3Fid%3D520670825497&amp;pid=520670825497&amp;lc=shouye_brand" target="_blank">马上抢</a></div>
+                <?php if(is_array($production)): foreach($production as $key=>$data): ?><div class="col-md-4">
+                <a class="ef" href="<?php echo ($data["url"]); ?>"> <div class="J_super_item item-mod  super-item-start"><img style="display: block;" class="img lazy" alt="<?php echo ($data["name"]); ?>" src="<?php echo ($data["cover"]); ?>"><div class="J_item_notice msg-soon"></div><h4 class="title"><?php echo ($data["name"]); ?></h4></div></div>
                 </a>
-                </div>
-                </foreach>
+                </div><?php endforeach; endif; ?>
                 
               </div>
             </div>
@@ -270,8 +245,8 @@ function getParameter(name) {
 }
 //init
 $(function(){
-  var totalPage = {$perPage};
-  var totalRecords = {$count};
+  var totalPage = <?php echo ($perPage); ?>;
+  var totalRecords = <?php echo ($count); ?>;
   var pageNo = getParameter('p');
   if(!pageNo){
     pageNo = 1;
@@ -285,11 +260,11 @@ $(function(){
     //总数据条数
     totalRecords : totalRecords,
     //链接前部
-    hrefFormer : 'Womancloth',
+    hrefFormer : 'Mancloth',
     //链接尾部
     hrefLatter : '.html',
     getLink : function(n){
-      return this.hrefFormer + this.hrefLatter + "?p="+n +"&classify={$classify_id}";
+      return this.hrefFormer + this.hrefLatter + "?p="+n;
     }
     
     ,lang       : {
@@ -389,7 +364,7 @@ $(function(){
       </div>
       <div class="col-md-6">
         <div class="middle">
-          <a href="#">条款与细则</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">{$beian}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">{$banquan}</a>
+          <a href="#">条款与细则</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><?php echo ($beian); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><?php echo ($banquan); ?></a>
         </div>
       </div>
       <div class="col-md-3">

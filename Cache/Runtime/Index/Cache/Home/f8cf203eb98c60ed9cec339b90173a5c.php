@@ -40,6 +40,20 @@
           eventB:'mouseleave'
         });
       });
+    
+    //加入收藏
+    function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL); 
+      try{   
+        window.external.addFavorite(sURL, sTitle);   
+      }catch(e) {   
+        try{   
+          window.sidebar.addPanel(sTitle, sURL, "");   
+        }catch (e){   
+          alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }   
+      }
+    }
     </script>
   </head>
   <body>
@@ -49,10 +63,11 @@
         </div>
         <div class="col-md-10">
           <div class="row">
-            <div class="col-md-3">logo店名</div>
+            <div class="col-md-3"><img src="/taobaoke/Uploads/img/2015/woman.png" width="120px;"></div>
             <div class="col-md-3 navcell"></div>
-            <div class="col-md-3 navcell"><a href="">服务QQ</a></div>
-            <div class="col-md-3 navcell"><a href="">收藏BOOKMARK+</a></div>
+            <div class="col-md-3 navcell">
+            <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>
+            <div class="col-md-3 navcell"><a href="" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏BOOKMARK+</a></div>
           </div>
         </div>
         <div class="col-md-1 col-xs-0 col-sm-1">
@@ -69,34 +84,59 @@
             <div class="col-md-12">
               <div class="marquee"> 
                 <ul>
-                  <li><img src="/taobaoke/Public/Index/img/scroll1.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll2.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll3.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll4.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll5.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll6.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll7.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll1.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll2.png"/></li>
-                  <li><img src="/taobaoke/Public/Index/img/scroll3.png"/></li>
+                  <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/taobaoke<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
                 </ul>
               </div>
             </div>
           </div>
           <div class="row display">
             <div class="col-md-12 col-xs-12 col-sm-12">
-              <img class="dd" src="/taobaoke/Public/Index/img/pic1.png" />
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <?php if(is_array($scroll_index)): foreach($scroll_index as $k=>$vo): if($key == 0): ?><li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>" class="active"></li>
+                    <?php else: ?>
+                      <li data-target="#carousel-example-generic" data-slide-to="<?php echo ($key); ?>"></li><?php endif; endforeach; endif; ?>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <?php if(is_array($scroll_index)): foreach($scroll_index as $k=>$data): if($key == 0): ?><div class="item active">
+                        <img class="dd" src="/taobaoke<?php echo ($data["pic_adr"]); ?>" />
+                      </div>
+                    <?php else: ?>
+                      <div class="item">
+                        <img class="dd" src="<?php echo ($data["pic_adr"]); ?>" />
+                      </div><?php endif; endforeach; endif; ?>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
           <div class="row display low">
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="/taobaoke/Public/Index/img/pic2.png" />
+              <a href="<?php echo U('Production/Mancloth');?>">
+                <img class="" src="/taobaoke<?php echo ($man_cloth_picture); ?>" />
+              </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="/taobaoke/Public/Index/img/pic3.png" />
+              <a href="<?php echo U('Production/Womancloth');?>">
+                <img class="" src="/taobaoke<?php echo ($woman_cloth_picture); ?>" />
+              </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="/taobaoke/Public/Index/img/pic4.png" />
+              <a href="<?php echo U('Production/Shoe');?>">
+                <img class="" src="/taobaoke<?php echo ($shoe_picture); ?>" />
+              </a>
             </div>
           </div>
         </div>

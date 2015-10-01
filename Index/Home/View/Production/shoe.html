@@ -67,8 +67,8 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2 sign">{$title}</div>
-              <a href="{:U('Production/index')}"><div class="col-md-1 active">单品推介</div></a>
-              <a href="{:U('Shop/index')}"><div class="col-md-1 choice">店铺推荐</div></a>
+              <a href="{:U('Production/Shoe')}"><div class="col-md-1 active">单品推介</div></a>
+              <a href="{:U('Shop/Shoe')}"><div class="col-md-1 choice">店铺推荐</div></a>
               <div class="col-md-4 navcell"></div>
               <div class="col-md-2 navcell">
               <a href="tencent://message/?uin={$QQ.content}&Site=&Menu=yes">服务QQ</a></div>
@@ -147,21 +147,21 @@
 
                     <ul class="dropdown-menu">
                       <foreach item="data" name="classification">
-                        <li><a href="{:U('Production/Womancloth')}?classify={$data.id}">{$data.name}</a></li>
+                        <li><a href="{:U('Production/Shoe')}?classify={$data.id}">{$data.name}</a></li>
                       </foreach>
                       <li role="separator" class="divider"></li>
-                      <li><a href="{:U('Production/Womancloth')}?classify=all">全部</a></li>
+                      <li><a href="{:U('Production/Shoe')}?classify=all">全部</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="">男士服装</a>
+                  <a href="{:U('Production/Mancloth')}">男士服装</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="">女士服装</a>
+                  <a href="{:U('Production/Womancloth')}">女士服装</a>
                 </div>
                 <div class="col-md-1">
-                  <a href="">鞋</a>
+                  <a href="{:U('Production/Shoe')}">鞋</a>
                 </div>
               </div>
               <div class="col-md-1">
@@ -285,7 +285,7 @@ $(function(){
     //总数据条数
     totalRecords : totalRecords,
     //链接前部
-    hrefFormer : 'Womancloth',
+    hrefFormer : 'Shoe',
     //链接尾部
     hrefLatter : '.html',
     getLink : function(n){

@@ -40,6 +40,20 @@
           eventB:'mouseleave'
         });
       });
+    
+    //加入收藏
+    function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL); 
+      try{   
+        window.external.addFavorite(sURL, sTitle);   
+      }catch(e) {   
+        try{   
+          window.sidebar.addPanel(sTitle, sURL, "");   
+        }catch (e){   
+          alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }   
+      }
+    }
     </script>
   </head>
   <body>
@@ -49,10 +63,11 @@
         </div>
         <div class="col-md-10">
           <div class="row">
-            <div class="col-md-3">logo店名</div>
+            <div class="col-md-3"><img src="__ROOT__/Uploads/img/2015/woman.png" width="120px;"></div>
             <div class="col-md-3 navcell"></div>
-            <div class="col-md-3 navcell"><a href="">服务QQ</a></div>
-            <div class="col-md-3 navcell"><a href="">收藏BOOKMARK+</a></div>
+            <div class="col-md-3 navcell">
+            <a href="tencent://message/?uin={$QQ.content}&Site=&Menu=yes">服务QQ</a></div>
+            <div class="col-md-3 navcell"><a href="" onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">收藏BOOKMARK+</a></div>
           </div>
         </div>
         <div class="col-md-1 col-xs-0 col-sm-1">
@@ -69,34 +84,69 @@
             <div class="col-md-12">
               <div class="marquee"> 
                 <ul>
-                  <li><img src="__PUBLIC__/Index/img/scroll1.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll2.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll3.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll4.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll5.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll6.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll7.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll1.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll2.png"/></li>
-                  <li><img src="__PUBLIC__/Index/img/scroll3.png"/></li>
+                  <foreach name="scroll_shop" item="data" key="k" >
+                    <li><img src="__ROOT__{$data.pic_adr}"/></li>
+                  </foreach>
                 </ul>
               </div>
             </div>
           </div>
           <div class="row display">
             <div class="col-md-12 col-xs-12 col-sm-12">
-              <img class="dd" src="__PUBLIC__/Index/img/pic1.png" />
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <foreach name="scroll_index" item="vo" key="k" >
+                    <if condition="$key eq 0">
+                      <li data-target="#carousel-example-generic" data-slide-to="{$key}" class="active"></li>
+                    <else />
+                      <li data-target="#carousel-example-generic" data-slide-to="{$key}"></li>
+                    </if>
+                  </foreach>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <foreach name="scroll_index" item="data" key="k" >
+                    <if condition="$key eq 0">
+                       <div class="item active">
+                        <img class="dd" src="__ROOT__{$data.pic_adr}" />
+                      </div>
+                    <else />
+                      <div class="item">
+                        <img class="dd" src="{$data.pic_adr}" />
+                      </div>
+                    </if>
+                  </foreach>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
           <div class="row display low">
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="__PUBLIC__/Index/img/pic2.png" />
+              <a href="{:U('Production/Mancloth')}">
+                <img class="" src="__ROOT__{$man_cloth_picture}" />
+              </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="__PUBLIC__/Index/img/pic3.png" />
+              <a href="{:U('Production/Womancloth')}">
+                <img class="" src="__ROOT__{$woman_cloth_picture}" />
+              </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <img class="" src="__PUBLIC__/Index/img/pic4.png" />
+              <a href="{:U('Production/Shoe')}">
+                <img class="" src="__ROOT__{$shoe_picture}" />
+              </a>
             </div>
           </div>
         </div>

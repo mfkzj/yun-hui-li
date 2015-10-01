@@ -163,8 +163,8 @@ nav{
 
 .price{
 	color: #C03111;
-	text-align: right;
 	font-size: 22px;
+	text-align: left;
 }
 
 .page{
@@ -192,3 +192,264 @@ footer a:hover{
 	text-align: center;
 }
 
+.item-mod {
+	float: left;
+    position: relative;
+    float: left;
+    width: 320px;
+    margin: 0px 12px 15px 0px;
+    border: 1px solid #EDEDED;
+    box-shadow: 0px 3px 0px #F2F2F2;
+    background: #FFF none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+
+.brand-layout-bd .item-mod .fav {
+    position: absolute;
+    z-index: 5;
+    bottom: 78px;
+    right: 2px;
+    width: 54px;
+    height: 38px;
+    overflow: hidden;
+    border-left: 1px solid #D7D8DB;
+    color: #5F646E;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.brand-layout-bd .item-mod .fav i {
+    display: block;
+    margin: 0px auto;
+    width: 22px;
+    height: 21px;
+    background: transparent url("//static2.51fanli.net/super/images/common-icon8.alpha.png") no-repeat scroll -221px -274px;
+}
+
+.item-mod .link {
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    z-index: 2;
+    width: 322px;
+    height: 443px;
+    background: transparent url("//static2.51fanli.net/common/images/loading/spacer.png") repeat scroll 0% 0%;
+}
+
+.item-mod .image, .item-mod .img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    background: #EDEDED none repeat scroll 0% 0%;
+}
+
+img {
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 1em;
+    color: #999;
+    text-align: left;
+    overflow: hidden;
+}
+
+fieldset, img {
+    border: medium none;
+}
+
+.item-mod .msg-soon {
+    display: none;
+    z-index: 3;
+    width: 130px;
+    margin: -110px 0px 0px -65px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item-mod .msg-soon, .item-mod .msg-over, .item-mod .msg-booking {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.brand-layout-bd .item-mod .title {
+    padding-right: 60px;
+}
+
+.item-mod .title {
+    display: block;
+    height: 50px;
+    padding: 7px 12px 0px;
+    margin-bottom: 8px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #333;
+    text-overflow: ellipsis;
+}
+
+.item-mod .msg-soon p {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    border-bottom: 1px dotted #D3CDCC;
+}
+
+.item-mod .desc {
+    height: 78px;
+    padding: 7px 0px 0px 12px;
+    background: #FBFBFB none repeat scroll 0% 0%;
+}
+
+.money {
+    font-family: Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei","SimSun",sans-serif;
+}
+
+.item-mod .mod-btn {
+    position: absolute;
+    bottom: 15px;
+    right: -5px;
+    z-index: 3;
+    width: 75px;
+    height: 37px;
+    background: transparent url("//static2.51fanli.net/super/images/common-icon8.alpha.png") no-repeat scroll 0px 0px;
+    cursor: pointer;
+}
+
+.ht {
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    list-style: outside none none;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item-mod .msg-soon strong {
+    font-size: 14px;
+}
+
+.item-mod .msg-soon span {
+    font-size: 12px;
+    margin: 0px;
+padding: 0px;
+border: 0px none;
+font: inherit;
+}
+
+a.red:link, a.red:visited, .red {
+    color: #FE4300;
+}
+
+.item-mod .price {
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+}
+
+.item-mod .price strong {
+    padding-right: 8px;
+    font-size: 26px;
+}
+
+.item-mod .fl {
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #C33;
+}
+
+.item-mod .fl strong {
+    float: left;
+    font-size: 26px;
+}
+
+.i-gmhf {
+    float: left;
+    display: block;
+    height: 18px;
+    padding: 0px 5px;
+    margin: 6px 0px 0px 8px;
+    line-height: 18px;
+    overflow: hidden;
+    border-radius: 3px;
+    text-align: center;
+    font-family: Helvetica,Arial,SimSun;
+    font-size: 12px;
+    color: #FFF;
+    background: #C33 none repeat scroll 0% 0%;
+}
+
+address, caption, cite, code, dfn, em, i, th, var {
+    font-style: normal;
+}
+
+.item-mod .msg-soon, .item-mod .msg-over, .item-mod .msg-booking {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.clearfix, .container {
+	text-align: left;
+}
+
+.J_item_link{
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+	font: inherit;
+	text-align: left;
+}
+
+.footer_server_list {
+    height: 126px;
+    border-bottom: 1px dotted #E9E9E9;
+}
+
+.footer_server_list dl {
+    width: 160px;
+    padding: 15px 0px 0px 49px;
+    float: left;
+}
+
+.footer_server_list dl dt {
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    list-style: outside none none;
+}
+
+.footer_server_list dl dd {
+    display: block;
+    padding: 2px 0px 0px;
+    list-style: outside none none;
+    font-size: 12px;
+}
+
+.footer_server_list dl dd a {
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.footer_server_list dl.last {
+    width: 220px;
+    height: 86px;
+    line-height: 20px;
+    border-left: 1px dotted #E4E4E4;
+    margin: 20px 0px 0px;
+    padding: 0px;
+    text-align: center;
+}
