@@ -33,7 +33,7 @@
             var url = $('#url').val();
             $.ajax({
                 type : "POST",
-                url : "<?php echo U('Manclothproduction/catchMessage');?>",
+                url : "<?php echo U('Womanclothproduction/catchMessage');?>",
                 dataType : "json",
                 data: "url=" + encodeURIComponent(url),
                 success : function (data) {
@@ -66,9 +66,8 @@
             $("#img").attr("value",url);
         }
 
-        function callmyModal(url){
-            url = 'http://' + url;
-            window.top.window.myModalImage(url);
+        function callmyModal_1(u){
+            window.top.window.myModalImage(u);
         }
     </script>
     
@@ -79,7 +78,7 @@
     <div class="row">
         <div class="col-md-12">        
             <h1 class="page-header">
-                添加单品推介
+                修改单品推介
             </h1>
         </div>
     </div>
@@ -87,12 +86,12 @@
     <div class="row">
         <div class="col-md-12">
             <ol class="breadcrumb">
-              <li><a href="<?php echo U('Manclothproduction/index');?>">男士服装-单品推介</a></li>
-              <li class="active">添加单品推介</li>
+              <li><a href="<?php echo U('Womanclothproduction/index');?>"> 女士服装-单品推介</a></li>
+              <li class="active">修改单品推介</li>
             </ol>
         </div>
     </div>
-    <form class="form-signin" enctype="multipart/form-data" role="form" action="<?php echo U('Manclothproduction/add_handle');?>" method='post' id="form">
+    <form class="form-signin" enctype="multipart/form-data" role="form" action="<?php echo U('Womanclothproduction/alter_handle');?>" method='post' id="form">
     <!-- 主体 -->
     <div class="row">
         <div class="col-md-12">
@@ -100,44 +99,44 @@
               <tbody>
                 <tr>
                   <td>淘宝地址:</td>
-                  <td><input id="url" name="url" type="text" class="form-control" style="width:500px;float:left;" placeholder="请输入解析淘宝地址" value=""><div style="float:left;margin-left:10px;"><a id="send" class="btn btn-success" onclick="sendJson();">解 析</a></div></td>
+                  <td><input id="url" name="url" type="text" class="form-control" style="width:500px;float:left;" placeholder="请输入解析淘宝地址" value="<?php echo ($data["url"]); ?>"><div style="float:left;margin-left:10px;"><a id="send" class="btn btn-success" onclick="sendJson();">解 析</a></div></td>
                 </tr>
                 <tr>
                   <td>商品名称:</td>
-                  <td><input id="name" name="name" type="text" class="form-control" style="width:500px;" placeholder="请输入商品名称" value=""></td>
+                  <td><input id="name" name="name" type="text" class="form-control" style="width:500px;" placeholder="请输入商品名称" value="<?php echo ($data["name"]); ?>"></td>
                 </tr>
                 <tr>
                   <td>商品分类:</td>
                   <td>
                     <select class="form-control" style="width:150px;" name="classify_id">
-                        <?php if(is_array($classification)): foreach($classification as $key=>$data): ?><option value="<?php echo ($data["id"]); ?>"><?php echo ($data["name"]); ?></option><?php endforeach; endif; ?>
+                        <?php if(is_array($classification)): foreach($classification as $key=>$classification): ?><option value="<?php echo ($classification["id"]); ?>"><?php echo ($classification["name"]); ?></option><?php endforeach; endif; ?>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>原价钱：</td>
-                  <td><input id="price_original" name="price_original" type="text" class="form-control" style="width:120px;" placeholder="请输入原价钱" value=""></td>
+                  <td><input id="price_original" name="price_original" type="text" class="form-control" style="width:120px;" placeholder="请输入原价钱" value="<?php echo ($data["price_original"]); ?>"></td>
                 </tr>
                 <tr>
                   <td>折后价：</td>
-                  <td><input id='price_now' name="price_now" type="text" class="form-control" style="width:120px;" placeholder="请输入折后价" value=""></td>
+                  <td><input id='price_now' name="price_now" type="text" class="form-control" style="width:120px;" placeholder="请输入折后价" value="<?php echo ($data["price_now"]); ?>"></td>
                 </tr>
                 <tr>
                   <td>返利：</td>
-                  <td><input id='rebate' name="rebate" type="text" class="form-control" style="width:100px;" placeholder="请输入返利" value=""></td>
+                  <td><input id='rebate' name="rebate" type="text" class="form-control" style="width:100px;" placeholder="请输入返利" value="<?php echo ($data["rebate"]); ?>"></td>
+                </tr>
+                <tr>
+                  <td>当前图片:</td>
+                  <td><a href="#" onclick="callmyModal_1('<?php echo ($data["cover"]); ?>');"><img src="<?php echo ($data["cover"]); ?>" class="img-thumbnail" style="height:200px;width:200px;float:left;"/></a></td>
                 </tr>
                 <tr>
                     <td>选择封面图片:</td>
                     <td id="imput"><p id="altput" >解析后才可预览</p></td>
                 </tr>
-                <tr>
-                  <td>是否置顶：</td>
-                  <td><input type="radio" name="optionsRadios" id="optionsRadios1" value="1" checked>是&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="0">否</td>
-                </tr>
               </tbody>
             </table>
-            <input id="img" name="img" value="" type="hidden" >
+            <input id="img" name="img" value="<?php echo ($data["cover"]); ?>" type="hidden" >
+            <input name="id" value="<?php echo ($data["id"]); ?>" type="hidden" >
             <div style="float:right;"><button type="submit" class="btn btn-primary">提 交</button></div>
         </div>
     </div>

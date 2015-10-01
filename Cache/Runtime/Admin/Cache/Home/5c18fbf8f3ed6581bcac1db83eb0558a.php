@@ -106,6 +106,14 @@
                   <td><input id="name" name="name" type="text" class="form-control" style="width:500px;" placeholder="请输入商品名称" value="<?php echo ($data["name"]); ?>"></td>
                 </tr>
                 <tr>
+                  <td>商品分类:</td>
+                  <td>
+                    <select class="form-control" style="width:150px;" name="classify_id">
+                        <?php if(is_array($classification)): foreach($classification as $key=>$classification): ?><option value="<?php echo ($classification["id"]); ?>"><?php echo ($classification["name"]); ?></option><?php endforeach; endif; ?>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
                   <td>原价钱：</td>
                   <td><input id="price_original" name="price_original" type="text" class="form-control" style="width:120px;" placeholder="请输入原价钱" value="<?php echo ($data["price_original"]); ?>"></td>
                 </tr>

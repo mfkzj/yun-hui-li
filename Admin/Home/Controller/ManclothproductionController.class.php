@@ -24,6 +24,14 @@ class ManclothproductionController extends CommonController {
         $page        = new \Think\Page($count,C('分页'));
         // 分页显示输出
         $show        = $page->show();
+        // 查找分类
+        for($i=0;$i<COUNT($production);$i++)
+        {
+            if($classification = M('classification')->find($production[$i]['classify_id']))
+            {
+                $production[$i]['classification'] = $classification['name'];
+            }
+        }
         // 数据映射
         $this->production = $production;
         $this->page       = $show;
@@ -39,6 +47,8 @@ class ManclothproductionController extends CommonController {
 
     /* 添加店铺推荐界面 */
     public function add(){
+        // 分类
+        $this->classification = M('classification')->where(array('type' => 'MANCLOTH'))->order('sort')->select();
         // 显示模板
         $this->display();
     }
@@ -57,6 +67,8 @@ class ManclothproductionController extends CommonController {
         $rebate         = $_POST['rebate'];
         // 获取封面URL
         $cover          = $_POST['img'];
+        // 获取商品分类id
+        $classify_id    = $_POST['classify_id'];
         // 输入判断
         if($url == ""){
             $this->error('请输入店铺网址');
@@ -75,6 +87,9 @@ class ManclothproductionController extends CommonController {
         }
         if($cover == ""){
             $this->error("请选择图片上传");
+        }
+        if($classify_id == ""){
+            $this->error('请选择分类');
         }
         // 获取操作者
         $loginname = $_SESSION['loginname'];
@@ -99,6 +114,7 @@ class ManclothproductionController extends CommonController {
             'rebate'          => $rebate,
             'type'            => 'MANCLOTH',
             'sort'            => $sort,
+            'classify_id'     => $classify_id,
             'click'           => 0,
             'controller'      => $loginname,
             'created_time'    => Date('Y-m-d H:i:s')
@@ -122,6 +138,8 @@ class ManclothproductionController extends CommonController {
         $id             = $_GET['id'];
         // 获取当前处理的数据
         $this->data     = M('production')->find($id);
+        // 分类
+        $this->classification = M('classification')->where(array('type' => 'MANCLOTH'))->order('sort')->select();
         // 显示模板
         $this->display();
     }
@@ -142,6 +160,8 @@ class ManclothproductionController extends CommonController {
         $rebate         = $_POST['rebate'];
         // 获取封面URL
         $cover          = $_POST['img'];
+        // 获取商品分类id
+        $classify_id     = $_POST['classify_id'];
         // 输入判断
         if($url == ""){
             $this->error('请输入店铺网址');
@@ -161,6 +181,9 @@ class ManclothproductionController extends CommonController {
         if($cover == ""){
             $this->error("请选择图片上传");
         }
+        if($classify_id == ""){
+            $this->error('请选择分类');
+        }
         // 获取操作者
         $loginname = $_SESSION['loginname'];
         // 构造数据
@@ -172,6 +195,7 @@ class ManclothproductionController extends CommonController {
             'price_now'      => $price_now,
             'cover'          => $cover,
             'rebate'         => $rebate,
+            'classify_id'      => $classify_id,
             'controller'     => $loginname,
             'created_time'   => Date('Y-m-d H:i:s')
         );

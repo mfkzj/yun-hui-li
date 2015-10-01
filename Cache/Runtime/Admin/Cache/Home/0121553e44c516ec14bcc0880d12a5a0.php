@@ -63,21 +63,16 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                  <th class="col-md-1"><div align="center">序号</div></th>
-                                  <th class="col-md-3"><div align="center">名称</div></th>
+                                  <th class="col-md-4"><div align="center">名称</div></th>
                                   <th class="col-md-2"><div align="center">图片</div></th>
-                                  <th class="col-md-2"><div align="center">链接</div></th>
-                                  <th class="col-md-2"><div align="center">排序</div></th>
+                                  <th class="col-md-2"><div align="center">分类</div></th>
+                                  <th class="col-md-1"><div align="center">链接</div></th>
+                                  <th class="col-md-1"><div align="center">排序</div></th>
                                   <th class="col-md-2"><div align="center">操作</div></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php if(is_array($production)): foreach($production as $key=>$data): ?><tr>
-                                    <th scope="row">
-                                        <div align="center" style="padding-top:15px;">
-                                            <?php echo ($key+1); ?>
-                                        </div>
-                                    </th>
                                     <td>
                                         <div align="center" style="padding-top:6px;">
                                             <?php echo ($data["name"]); ?>
@@ -88,6 +83,11 @@
                                             <a href="#" onclick="callmyModal_1('<?php echo ($data["cover"]); ?>')">
                                                 <img src="<?php echo ($data["cover"]); ?>" class="img-rounded" style="height:50px;">
                                             </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div align="center" style="padding-top:15px;">
+                                            <?php echo ($data["classification"]); ?>
                                         </div>
                                     </td>
                                     <td>
