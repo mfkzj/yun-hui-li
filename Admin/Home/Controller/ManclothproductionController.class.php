@@ -214,7 +214,6 @@ class ManclothproductionController extends CommonController {
 
     /* 删除店铺推荐处理 */
     public function delete_handle(){
-        p($_GET);die;
         // 获取参数
         $id           = $_GET['id'];
         // 获取当前处理的数据
