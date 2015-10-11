@@ -7,27 +7,27 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/taobaoke/Public/icon.ico">
+    <link rel="icon" href="/yunhuili/Public/icon.ico">
 
     <title>单品推介</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/yunhuili/Public/Index/bootstrap/css/bootstrap.min.css">
 
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/yunhuili/Public/Index/bootstrap/css/bootstrap-theme.min.css">
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="/taobaoke/Public/Index/bootstrap/js/jquery.min.js"></script>
+    <script src="/yunhuili/Public/Index/bootstrap/js/jquery.min.js"></script>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="/taobaoke/Public/Index/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/yunhuili/Public/Index/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/taobaoke/Public/Index/js/scroll.js"></script>
-    <link href="/taobaoke/Public/Index/css/production.css" rel="stylesheet">
+    <script src="/yunhuili/Public/Index/js/scroll.js"></script>
+    <link href="/yunhuili/Public/Index/css/production.css" rel="stylesheet">
 
-    <script type="text/javascript" src="/taobaoke/Public/Index/js/kkpager.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/taobaoke/Public/Index/css/kkpager_orange.css" />
+    <script type="text/javascript" src="/yunhuili/Public/Index/js/kkpager.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/yunhuili/Public/Index/css/kkpager_orange.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -67,8 +67,8 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2 sign"><?php echo ($title); ?></div>
-              <a href="<?php echo U('Production/index');?>"><div class="col-md-1 choice">单品推介</div></a>
-              <a href="<?php echo U('Shop/index');?>"><div class="col-md-1 active">店铺推荐</div></a>
+              <a href="<?php echo U('Production/mancloth');?>"><div class="col-md-1 choice">单品推介</div></a>
+              <a href="<?php echo U('Shop/mancloth');?>"><div class="col-md-1 active">店铺推荐</div></a>
               <div class="col-md-4 navcell"></div>
               <div class="col-md-2 navcell">
               <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>
@@ -88,7 +88,7 @@
         <div class="col-md-10">
           <div class="marquee"> 
             <ul>
-              <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/taobaoke<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
+              <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/yunhuili<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
             </ul>
           </div>
         </div>
@@ -103,12 +103,12 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2">
-                <img src="/taobaoke/Public/Index/img/logo.png" />
+                <img src="/yunhuili/Uploads/img/logo.png" width="180px;" />
               </div>
               <div class="col-md-3">
               </div>
               <div class="col-md-2">
-                <img src="/taobaoke/Public/Index/img/adv1.png" style="width:100%;padding:0px;" />
+                <img src="/yunhuili/Public/Index/img/adv1.png" style="width:100%;padding:0px;" />
               </div>
               <div class="col-md-2">
               </div>
@@ -140,13 +140,13 @@
                   <a href="<?php echo U('Index/index');?>">首页</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="<?php echo U('Shop/Mancloth');?>">男士服装</a>
+                  <a href="<?php echo U('Shop/mancloth');?>">男士服装</a>
                 </div>
                 <div class="col-md-1" style="padding:0px">
-                  <a href="<?php echo U('Shop/Womancloth');?>">女士服装</a>
+                  <a href="<?php echo U('Shop/womancloth');?>">女士服装</a>
                 </div>
                 <div class="col-md-1">
-                  <a href="<?php echo U('Shop/Shoe');?>">鞋</a>
+                  <a href="<?php echo U('Shop/shoe');?>">鞋</a>
                 </div>
               </div>
               <div class="col-md-1">
@@ -173,11 +173,11 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <?php if(is_array($scroll_production)): foreach($scroll_production as $key=>$data): if($key == 0): ?><div class="item active">
-                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
+                    <img src="/yunhuili<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
                   </div>
                 <?php else: ?>
                   <div class="item">
-                    <img src="/taobaoke<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
+                    <img src="/yunhuili<?php echo ($data["pic_adr"]); ?>" style="width:100%;padding:0px;"/>
                   </div><?php endif; endforeach; endif; ?>
             </div>
 
@@ -207,7 +207,7 @@
               <div class="row">
 <!--                 <div class="col-md-3">
                   <div class="thumbnail framework" style="border:none;padding:0px;">
-                    <img src="/taobaoke/Public/Index/img/pic5.png" >
+                    <img src="/yunhuili/Public/Index/img/pic5.png" >
                     <div class="caption">
                       <p>韩都衣舍韩版2015秋款女时尚显瘦纯色背带连衣裙NW5265琴0911</p>
                       <p class="price">￥399</p>
@@ -215,8 +215,13 @@
                   </div>
                 </div> -->
                 <?php if(is_array($production)): foreach($production as $key=>$data): ?><div class="col-md-4">
-                <a class="ef" href="<?php echo ($data["url"]); ?>"> <div class="J_super_item item-mod  super-item-start"><img style="display: block;" class="img lazy" alt="<?php echo ($data["name"]); ?>" src="<?php echo ($data["cover"]); ?>"><div class="J_item_notice msg-soon"></div><h4 class="title"><?php echo ($data["name"]); ?></h4></div></div>
-                </a>
+                  <a class="ef" href="<?php echo ($data["url"]); ?>">
+                    <div class="J_super_item item-mod  super-item-start">
+                      <img style="display: block;" class="img lazy" alt="<?php echo ($data["name"]); ?>" src="/yunhuili<?php echo ($data["pic_adr"]); ?>">
+                      <div class="J_item_notice msg-soon"></div>
+                      <h4 class="title"><?php echo ($data["name"]); ?></h4>
+                    </div>
+                  </a>
                 </div><?php endforeach; endif; ?>
                 
               </div>

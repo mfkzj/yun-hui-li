@@ -7,25 +7,25 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/taobaoke/Public/icon.ico">
+    <link rel="icon" href="/yunhuili/Public/icon.ico">
 
     <title>首页</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/yunhuili/Public/Index/bootstrap/css/bootstrap.min.css">
 
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="/taobaoke/Public/Index/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/yunhuili/Public/Index/bootstrap/css/bootstrap-theme.min.css">
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="/taobaoke/Public/Index/bootstrap/js/jquery.min.js"></script>
+    <script src="/yunhuili/Public/Index/bootstrap/js/jquery.min.js"></script>
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="/taobaoke/Public/Index/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/yunhuili/Public/Index/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/taobaoke/Public/Index/js/reflex.js"></script>
-    <script src="/taobaoke/Public/Index/js/scroll.js"></script>
-    <link href="/taobaoke/Public/Index/css/index.css" rel="stylesheet">
+    <script src="/yunhuili/Public/Index/js/reflex.js"></script>
+    <script src="/yunhuili/Public/Index/js/scroll.js"></script>
+    <link href="/yunhuili/Public/Index/css/index.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -63,7 +63,7 @@
         </div>
         <div class="col-md-10">
           <div class="row">
-            <div class="col-md-3"><img src="/taobaoke/Uploads/img/logo.png" width="100px" style="margin:0px;padding:3px;float:left;"></div>
+            <div class="col-md-3"><img src="/yunhuili/Uploads/img/logo.png" width="100px" style="margin:0px;padding:3px;float:left;"></div>
             <div class="col-md-3 navcell"></div>
             <div class="col-md-3 navcell">
             <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>
@@ -84,7 +84,7 @@
             <div class="col-md-12">
               <div class="marquee"> 
                 <ul>
-                  <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/taobaoke<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
+                  <?php if(is_array($scroll_shop)): foreach($scroll_shop as $k=>$data): ?><li><img src="/yunhuili<?php echo ($data["pic_adr"]); ?>"/></li><?php endforeach; endif; ?>
                 </ul>
               </div>
             </div>
@@ -102,7 +102,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <?php if(is_array($scroll_index)): foreach($scroll_index as $k=>$data): if($key == 0): ?><div class="item active">
-                        <img class="dd" src="/taobaoke<?php echo ($data["pic_adr"]); ?>" />
+                        <img class="dd" src="/yunhuili<?php echo ($data["pic_adr"]); ?>" />
                       </div>
                     <?php else: ?>
                       <div class="item">
@@ -124,18 +124,18 @@
           </div>
           <div class="row display low">
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <a href="<?php echo U('Production/Mancloth');?>">
-                <img class="" src="/taobaoke<?php echo ($man_cloth_picture); ?>" />
+              <a href="<?php echo U('Production/mancloth');?>">
+                <img class="" src="/yunhuili<?php echo ($man_cloth_picture); ?>" />
               </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <a href="<?php echo U('Production/Womancloth');?>">
-                <img class="" src="/taobaoke<?php echo ($woman_cloth_picture); ?>" />
+              <a href="<?php echo U('Production/womancloth');?>">
+                <img class="" src="/yunhuili<?php echo ($woman_cloth_picture); ?>" />
               </a>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4">
-              <a href="<?php echo U('Production/Shoe');?>">
-                <img class="" src="/taobaoke<?php echo ($shoe_picture); ?>" />
+              <a href="<?php echo U('Production/shoe');?>">
+                <img class="" src="/yunhuili<?php echo ($shoe_picture); ?>" />
               </a>
             </div>
           </div>
