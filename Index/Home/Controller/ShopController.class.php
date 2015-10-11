@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class ShopController extends Controller {
+class ShopController extends CommonController {
     public function index(){
     	echo '无法进入';die;
     }
