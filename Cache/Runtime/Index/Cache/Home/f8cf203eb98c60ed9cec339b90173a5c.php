@@ -63,7 +63,7 @@
         </div>
         <div class="col-md-10">
           <div class="row">
-            <div class="col-md-3"><img src="/taobaoke/Uploads/img/2015/woman.png" width="120px;"></div>
+            <div class="col-md-3"><img src="/taobaoke/Uploads/img/logo.png" width="100px" style="margin:0px;padding:3px;float:left;"></div>
             <div class="col-md-3 navcell"></div>
             <div class="col-md-3 navcell">
             <a href="tencent://message/?uin=<?php echo ($QQ["content"]); ?>&Site=&Menu=yes">服务QQ</a></div>

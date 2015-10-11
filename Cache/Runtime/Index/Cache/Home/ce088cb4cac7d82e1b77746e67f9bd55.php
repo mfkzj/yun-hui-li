@@ -103,7 +103,7 @@
           <div class="col-md-10">
             <div class="row">
               <div class="col-md-2">
-                <img src="/taobaoke/Public/Index/img/logo.png" />
+                <img src="/taobaoke/Uploads/img/logo.png" width="180px;" />
               </div>
               <div class="col-md-3">
               </div>
