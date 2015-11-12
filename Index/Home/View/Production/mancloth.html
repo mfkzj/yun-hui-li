@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,6 +56,13 @@
       }
     }
     </script>
+    <style type="text/css">
+      .banner{
+        width: 100%;
+        float: left;
+        height: 80px;   
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -83,9 +89,7 @@
 
     <div class="container1">
       <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <div class="marquee"> 
             <ul>
               <foreach name="scroll_shop" item="data" key="k" >
@@ -94,25 +98,19 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-1">
-        </div>
       </div>
 
-      <div class="container1">
+      <div class="container" style="margin-top:20px;margin-bottom:20px;">
         <div class="row">
-          <div class="col-md-1">
-          </div>
-          <div class="col-md-10">
+          <div class="col-md-12">
             <div class="row">
-              <div class="col-md-2">
-                <img src="__ROOT__/Uploads/img/logo.png" width="180px;" />
-              </div>
               <div class="col-md-3">
+                <img src="__ROOT__/Uploads/img/logo.png" width="180px;" style="margin-left:10%;" />
               </div>
-              <div class="col-md-2">
-                <img src="__PUBLIC__/Index/img/adv1.png" style="width:100%;padding:0px;" />
+              <div class="col-md-9">
+                <img class="banner" src="__PUBLIC__/Index/img/adv1.png"/>
               </div>
-              <div class="col-md-2">
+<!--               <div class="col-md-2">
               </div>
               <div class="col-md-3">
                 <div class="input-group">
@@ -120,11 +118,9 @@
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="button">搜索</button>
                   </span>
-                </div><!-- /input-group -->
-              </div>
+                </div>
+              </div> -->
             </div>
-          </div>
-          <div class="col-md-1">
           </div>
         </div>
       </div>
@@ -154,14 +150,14 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-1" style="padding:0px">
-                  <a href="{:U('Production/mancloth')}">男士服装</a>
-                </div>
-                <div class="col-md-1" style="padding:0px">
-                  <a href="{:U('Production/womancloth')}">女士服装</a>
+                <div class="col-md-1">
+                  <a href="{:U('Production/mancloth')}">男士</a>
                 </div>
                 <div class="col-md-1">
-                  <a href="{:U('Production/shoe')}">鞋</a>
+                  <a href="{:U('Production/womancloth')}">女士</a>
+                </div>
+                <div class="col-md-1">
+                  <a href="{:U('Production/shoe')}">鞋子</a>
                 </div>
               </div>
               <div class="col-md-1">
@@ -174,9 +170,7 @@
 
     <div class="container1">
       <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -214,8 +208,6 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
-        <div class="col-md-1">
         </div>
       </div>
     </div>
@@ -325,21 +317,25 @@ $(function(){
 });
 </script>
 
-  <div class="container2" style="margin-top:10px;">
+  <div class="container1" style="margin-top:10px;">
     <div class="row">
       <div class="col-md-1">
       </div>
       <div class="col-md-10">
         <div class="row">
           <div class="footer_server_list">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
           <dl>
-              <dt>购物指南</dt>
+            <dt>购物指南</dt>
                 <dd>
                  <a href="http://fanxian.egou.com/memberRegister.do" target="_blank">免费注册</a>
                  <a href="http://fanxian.egou.com/help/shang_yi.html" target="_blank">返利指导</a>
                  <a href="http://fanxian.egou.com/help/nafanxian.html#fx22" target="_blank">提现指导</a>
                 </dd>
             </dl>
+            </div>
+            <div class="col-md-2">
           <dl>
               <dt>常用服务</dt>
                 <dd>
@@ -348,6 +344,8 @@ $(function(){
                  <a href="http://bbs.egou.com/forum-16-1.html" target="_blank">建议疑问</a>
                 </dd>
             </dl>
+            </div>
+            <div class="col-md-2">
           <dl>
               <dt>商家服务</dt>
                 <dd>
@@ -356,6 +354,8 @@ $(function(){
                  <a href="http://fanxian.egou.com/help/links.html" target="_blank">友情链接</a>
                 </dd>
             </dl>
+            </div>
+            <div class="col-md-2">
           <dl>
               <dt>关于易购</dt>
                 <dd>
@@ -364,6 +364,8 @@ $(function(){
                  <a href="http://fanxian.egou.com/help/contactus.html" target="_blank">联系我们</a>
                 </dd>
             </dl>
+            </div>
+          <div class="col-md-2">
           <dl class="two">
               <dt>关注我们</dt>
                 <dd>
@@ -372,9 +374,11 @@ $(function(){
                  <a href="javascript:alert('请扫描下方的二维码，谢谢！');">官方微信</a>
                 </dd>
             </dl>
-            <dl class="last">
-              <dd><p class="font16">400-0060-666</p><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
-            </dl>
+          </div>
+          <div class="col-md-1"></div>
+<!--             <dl class="last">
+              <dd><p class="date">周一至周日 09:00-18:00<br>（仅收市话费）</p><p class="online"><a href="http://fanxian.egou.com/kefu.htm" target="_blank"></a></p></dd>
+            </dl> -->
         </div>
         </div>
       </div>
