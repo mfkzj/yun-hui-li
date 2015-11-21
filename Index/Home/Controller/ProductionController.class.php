@@ -44,7 +44,7 @@ class ProductionController extends CommonController {
     	// 取商铺幻灯片
         $where = array('type' => 'SHOP');
         $scroll_shop = M('scroll')->where($where)->order('sort')->select();
- 		while(COUNT($scroll_shop)<12){
+ 		while(COUNT($scroll_shop) < 16){
  			$scroll_shop = array_merge($scroll_shop,$scroll_shop);
  		}
  		$this->scroll_shop = $scroll_shop;
