@@ -412,44 +412,14 @@ address, caption, cite, code, dfn, em, i, th, var {
 }
 
 .footer_server_list {
-    height: 126px;
-    border-bottom: 1px dotted #E9E9E9;
+    height: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #F60;
+    border-radius:4px;
+    background-color: #F60;
 }
 
-.footer_server_list dl {
-    width: 160px;
-    padding: 15px 0px 0px 49px;
-    float: left;
+.footer_server_list a {
+    color: #FFF;
 }
 
-.footer_server_list dl dt {
-    height: 28px;
-    line-height: 28px;
-    font-size: 16px;
-    list-style: outside none none;
-}
-
-.footer_server_list dl dd {
-    display: block;
-    padding: 2px 0px 0px;
-    list-style: outside none none;
-    font-size: 12px;
-}
-
-.footer_server_list dl dd a {
-    height: 22px;
-    line-height: 22px;
-    display: block;
-    color: #666;
-    text-decoration: none;
-}
-
-.footer_server_list dl.last {
-    width: 220px;
-    height: 86px;
-    line-height: 20px;
-    border-left: 1px dotted #E4E4E4;
-    margin: 20px 0px 0px;
-    padding: 0px;
-    text-align: center;
-}

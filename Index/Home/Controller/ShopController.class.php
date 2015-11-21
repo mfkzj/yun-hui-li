@@ -12,7 +12,7 @@ class ShopController extends CommonController {
     	$this->getProductionScroll();
     	$this->getProduction($type);
         $this->getWeiInfo();
-    	$this->title = '男士服装';
+    	$this->title = '男士';
     	$this->display();
     }
 
@@ -22,7 +22,7 @@ class ShopController extends CommonController {
     	$this->getProductionScroll();
     	$this->getProduction($type);
         $this->getWeiInfo();
-    	$this->title = '女士服装';
+    	$this->title = '女士';
     	$this->display();
     }
 
@@ -32,7 +32,7 @@ class ShopController extends CommonController {
     	$this->getProductionScroll();
     	$this->getProduction($type);
         $this->getWeiInfo();
-    	$this->title = '鞋类';
+    	$this->title = '鞋子';
     	$this->display();
     }
 

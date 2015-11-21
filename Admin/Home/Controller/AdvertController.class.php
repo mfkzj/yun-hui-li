@@ -38,6 +38,10 @@ class AdvertController extends CommonController {
         if($_POST['img'] == 0 ){
             $this->error("请选择图片上传");
         }
+        // 输入限制
+        if($_POST['url'] == ""){
+            $this->error("请选择链接地址");
+        }
         // 图片上传
         $pic_adr = $this->uploadImage();
         if($pic_adr == -1){
@@ -56,11 +60,13 @@ class AdvertController extends CommonController {
             // 非置顶
             $sort = $this->sortGetBottom($dataRead);
         }
+        $url = $_POST['url'];
         // 构造数据
         $data = array(
             'pic_adr'      => $pic_adr,
             'type'         => 'PRODUCTION',
             'sort'         => $sort,
+            'url'          => $url,
             'controller'   => $_SESSION['loginname'],
             'created_time' => Date('Y-m-d H:i:s')
         );
@@ -81,6 +87,7 @@ class AdvertController extends CommonController {
         $data          = M('scroll')->find($id);
         $this->id      = $id;
         $this->pic_adr = $data['pic_adr'];
+        $this->url     = $data['url'];
         // 显示模板
         $this->display();
     }
@@ -88,36 +95,47 @@ class AdvertController extends CommonController {
     /* 修改商品广告幻灯片处理 */
     public function alter_production_handle(){
         // 输入限制
-        if($_POST['img'] == 0 ){
-            $this->error("请选择图片上传");
+        if($_POST['url'] == ""){
+            $this->error("请选择链接地址");
         }
         // 获取参数
         $id            = $_POST['id'];
         // 获取当前处理的数据
         $data          = M('scroll')->find($id);
-        $filename      = $_SERVER['DOCUMENT_ROOT']. __ROOT__ . $data['pic_adr'];
-        // 图片上传
-        $pic_adr = $this->uploadImage();
-        if($pic_adr == -1){
-            echo '图片上传错误';
-            die;
+        if($_POST['img'] == 1){
+            $filename      = $_SERVER['DOCUMENT_ROOT']. __ROOT__ . $data['pic_adr'];
+            // 图片上传
+            $pic_adr = $this->uploadImage();
+            if($pic_adr == -1){
+                echo '图片上传错误';
+                die;
+            }
+        }else{
+            $pic_adr = $data['pic_adr'];
         }
         // 获取操作者
         $loginname = $_SESSION['loginname'];
+        $url = $_POST['url'];
         // 构造数据
         $data = array(
             'id'           => $id,
             'pic_adr'      => $pic_adr,
+            'url'          => $url,
             'controller'   => $_SESSION['loginname'],
             'created_time' => Date('Y-m-d H:i:s')
         );
-        // 判断删除文件是否成功
-        if($this->deleteFile($filename) == 1)
-        {
-            M('scroll')->data($data)->save();
-            $this->success('修改成功',U('Advert/index'));
+        if($_POST['img'] == 1){
+            // 判断删除文件是否成功
+            if($this->deleteFile($filename) == 1)
+            {
+                M('scroll')->data($data)->save();
+                $this->success('修改成功',U('Advert/index'));
+            }else{
+                echo "删除文件错误";
+            }
         }else{
-            echo "删除文件错误";
+           M('scroll')->data($data)->save();
+            $this->success('修改成功',U('Advert/index')); 
         }   
     }
 

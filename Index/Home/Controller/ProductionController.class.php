@@ -14,7 +14,7 @@ class ProductionController extends CommonController {
     	$this->getProduction($type);
         $this->getClassification($type);
         $this->getWeiInfo();
-    	$this->title = '男士服装';
+    	$this->title = '男士';
     	$this->display();
     }
 
@@ -25,7 +25,7 @@ class ProductionController extends CommonController {
     	$this->getProduction($type);
     	$this->getClassification($type);
         $this->getWeiInfo();
-    	$this->title = '女士服装';
+    	$this->title = '女士';
     	$this->display();
     }
 
@@ -36,7 +36,7 @@ class ProductionController extends CommonController {
     	$this->getProduction($type);
         $this->getClassification($type);
         $this->getWeiInfo();
-    	$this->title = '鞋类';
+    	$this->title = '鞋子';
     	$this->display();
     }
 
